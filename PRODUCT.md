@@ -42,7 +42,7 @@ A single, recognisable professional with a strong personal style — premium, fa
 
 ## Evidence on Hand
 
-None real. Name, address (Carrer de València 284), phone (600 00 00 00), email, collegiate number (12.345) and prices (65 € studio, 90 € home Barcelona, 100 € metro, bono 5 × 300 €) are placeholders and must be labelled as such. No photos yet: photo slots are marked "pendiente". No testimonials, reviews, press or client counts exist — do not fabricate them.
+None real. Name, address (Carrer de València 284), phone (600 00 00 00), email, collegiate number (12.345) and prices (65 € studio, 90 € home Barcelona, 100 € metro, bono 5 × 300 €) are placeholders and must be labelled as such. No real photos yet: slots use provisional Unsplash stock photos, labelled as such and credited; they must be replaced by real photos of Gala and her studio. No testimonials, reviews, press or client counts exist — do not fabricate them.
 
 ## Product Principles
 

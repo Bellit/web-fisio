@@ -76,9 +76,9 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.035em;line-
 .zoom{height:230vh;position:relative}
 .zoom .stick{position:sticky;top:52px;height:calc(100vh - 52px);display:grid;place-items:center;overflow:hidden}
 .zoom .shot{width:calc(var(--w,62) * 1vw);height:calc(var(--h,62) * 1%);border-radius:calc(var(--r,36) * 1px);background:var(--pink);position:relative;overflow:hidden;will-change:width,height}
-.zoom .shot .ph{position:absolute;left:50%;bottom:0;width:min(46vh,70%);transform:translateX(-50%)}
+.zoom .shot .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .zoom .shot .lbl{position:absolute;top:1.25rem;left:1.25rem;background:rgba(255,255,255,.85);border-radius:999px;padding:.35rem .85rem;font-size:.85rem;color:var(--ink)}
-.zoom .over{position:absolute;inset:auto 0 12%;text-align:center;color:var(--ink);opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0)) * 30px))}
+.zoom .over{position:absolute;left:50%;bottom:8%;translate:-50% 0;width:max-content;max-width:calc(100% - 2rem);padding:1.25rem 2rem;border-radius:28px;background:rgba(255,255,255,.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);text-align:center;color:var(--ink);opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0)) * 30px))}
 .zoom .over h2{font-size:clamp(2.2rem,5.5vw,4.5rem)}
 .zoom .over p{font:500 clamp(1.1rem,2vw,1.5rem) var(--display);margin-top:.6rem}
 
@@ -145,6 +145,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.035em;line-
 .about{background:var(--mist);padding:clamp(5rem,12vw,9rem) 0}
 .about .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
 .about .pic{aspect-ratio:4/5;border-radius:28px;background:var(--pink);position:relative;overflow:hidden}
+.about .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .about .pic span{position:absolute;top:1.25rem;left:1.25rem;background:rgba(255,255,255,.85);border-radius:999px;padding:.35rem .85rem;font-size:.85rem}
 .about p{color:var(--ink-2);font-size:1.15rem;margin-top:1.25rem;max-width:44ch}
 .about p b{color:var(--ink);font-weight:500}
@@ -246,9 +247,9 @@ footer a:hover{text-decoration:underline}
 
   <section class="zoom" id="zoom" aria-label="Retrato de Gala">
     <div class="stick">
-      <div class="shot" id="shot" role="img" aria-label="Retrato de Gala Ferrer">
-        <span class="lbl">Foto de Gala, pendiente</span>
-        <svg class="ph" viewBox="0 0 400 420" aria-hidden="true"><path d="M200 40c-50 0-80 38-80 90 0 40 20 68 44 83-64 15-120 64-138 207h348c-18-143-74-192-138-207 24-15 44-43 44-83 0-52-30-90-80-90z" fill="#fff" opacity=".5"/></svg>
+      <div class="shot" id="shot">
+        <img class="ph" src="https://images.unsplash.com/photo-1791232776234-083dddacf26a?w=1800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Retrato de Gala Ferrer" width="1800" height="2400">
+        <span class="lbl">Foto de stock provisional</span>
         <div class="over" id="over">
           <h2>En su estudio. O en tu casa.</h2>
           <p>Eixample, Barcelona y área metropolitana.</p>
@@ -333,7 +334,7 @@ footer a:hover{text-decoration:underline}
 
   <section class="about" id="gala" aria-labelledby="t-gala">
     <div class="wrap grid">
-      <div class="pic reveal" role="img" aria-label="Gala en su estudio"><span>Foto del estudio, pendiente</span></div>
+      <div class="pic reveal"><img src="https://images.unsplash.com/photo-1700142360825-d21edc53c8db?w=900&amp;h=1125&amp;q=80&amp;auto=format&amp;fit=crop" alt="Sala de tratamiento del estudio" width="900" height="1125" loading="lazy"><span>Foto de stock provisional</span></div>
       <div class="reveal">
         <h2 class="h-m" id="t-gala">Hola, soy Gala.</h2>
         <p><b>Tengo 30 años y me encanta lo bien hecho.</b> En fisioterapia eso es técnica precisa, tiempo de verdad y explicarte lo que te pasa con palabras claras.</p>
@@ -395,7 +396,7 @@ footer a:hover{text-decoration:underline}
 
 <footer>
   <div class="wrap">
-    <p class="fine">Propuesta de diseño. Nombre, dirección, precios, horarios, teléfono y número de colegiada son datos de ejemplo. Las reservas de esta demostración no envían ningún dato.</p>
+    <p class="fine">Propuesta de diseño. Nombre, dirección, precios, horarios, teléfono y número de colegiada son datos de ejemplo. Las reservas de esta demostración no envían ningún dato. Fotos de stock provisionales de <a href="https://unsplash.com/photos/0ZyDJJyzH14" target="_blank" rel="noopener">Diego Sánchez</a> y <a href="https://unsplash.com/photos/o4OJfrmMC0o" target="_blank" rel="noopener">Kimiya Sabbaghan</a> en Unsplash.</p>
     <div class="row">
       <p>Gala Ferrer, fisioterapeuta colegiada. <a href="tel:+34600000000">600 00 00 00</a></p>
       <nav aria-label="Legal">

@@ -65,6 +65,7 @@ h2{font-size:clamp(2.6rem,6.5vw,5.5rem)}
 .hero .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.25rem,3vw,2.5rem);margin-top:clamp(2rem,4vw,3rem);align-items:end;max-width:68%}
 .hero .portrait{position:absolute;right:0;top:clamp(1.5rem,4vw,3rem);width:clamp(220px,25vw,340px);aspect-ratio:3/4;border-radius:var(--r);background:var(--c2);overflow:hidden;rotate:3deg;transition:rotate .6s cubic-bezier(.2,.7,.2,1)}
 .hero .portrait:hover{rotate:0deg}
+.hero .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .hero .portrait span{position:absolute;left:1.25rem;bottom:1.25rem;font-size:.85rem;color:var(--ink-soft);background:var(--white);padding:.35rem .8rem;border-radius:999px}
 .hero .intro p{font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.5;max-width:30ch}
 .rot{display:inline-grid;vertical-align:bottom;overflow:hidden;height:1.5em;background:var(--c1);border-radius:999px;padding:0 .7rem;margin-top:.15em}
@@ -228,7 +229,7 @@ footer a:hover{text-decoration:underline}
     <div class="wrap">
       <h1 id="t">gala<span class="l2">ferrer</span></h1>
       <div class="row">
-        <div class="portrait" role="img" aria-label="Retrato de Gala Ferrer"><span>Foto de Gala, pendiente</span></div>
+        <div class="portrait"><img src="https://images.unsplash.com/photo-1791232776234-083dddacf26a?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Retrato de Gala Ferrer" width="800" height="1067" fetchpriority="high"><span>Foto de stock provisional</span></div>
         <div class="intro">
           <p>Fisioterapeuta en Barcelona. Sesiones de 50 minutos para tu<br><span class="rot" id="rot"><span>espalda</span></span></p>
         </div>
@@ -353,7 +354,7 @@ footer a:hover{text-decoration:underline}
   <div class="wrap">
     <p class="giant" aria-hidden="true">gala ferrer</p>
     <div class="cols">
-      <p>Fisioterapeuta colegiada. <a href="tel:+34600000000">600 00 00 00</a>, <a href="mailto:hola@galaferrer.es">hola@galaferrer.es</a><br>Datos de ejemplo para la propuesta.</p>
+      <p>Fisioterapeuta colegiada. <a href="tel:+34600000000">600 00 00 00</a>, <a href="mailto:hola@galaferrer.es">hola@galaferrer.es</a><br>Datos de ejemplo para la propuesta. Foto de stock provisional de <a href="https://unsplash.com/photos/0ZyDJJyzH14" target="_blank" rel="noopener">Diego Sánchez</a> en Unsplash.</p>
       <nav aria-label="Legal">
         <a href="../legal.html#aviso">Aviso legal</a>
         <a href="../legal.html#privacidad">Privacidad</a>
