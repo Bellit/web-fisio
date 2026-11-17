@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gala Ferrer: cuatro propuestas de web</title>
+<meta name="description" content="Cuatro propuestas de diseño para la web de Gala Ferrer, fisioterapeuta en Barcelona: Pastel, Lookbook, Stories y Producto.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&family=Syne:wght@700&family=Hanken+Grotesk:wght@800&family=Inter+Tight:wght@600&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1f5;--ink:#241b28;--muted:#5f5466}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Figtree",system-ui,sans-serif;padding:clamp(2rem,6vw,4rem) 1rem}
+.wrap{max-width:980px;margin:0 auto}
+h1{font:500 clamp(1.8rem,4vw,2.6rem)/1.15 "Figtree",sans-serif;letter-spacing:-.02em}
+.intro{color:var(--muted);max-width:62ch;margin-top:.8rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2.5rem}
+.card{display:flex;flex-direction:column;border-radius:24px;overflow:hidden;text-decoration:none;color:inherit;background:#fff;border:1px solid #e2dae5;transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.swatch{height:220px;display:grid;place-items:center;font-size:clamp(3rem,6vw,4.4rem)}
+.s1{background:linear-gradient(135deg,#f5d5dc,#f8e4d3 50%,#ddd7f3);font:300 3.6rem/1 "Urbanist",sans-serif;letter-spacing:-.05em;color:#2b2530}
+.s4{background:#dcd5f4;font:700 3.6rem/1 "Syne",sans-serif;letter-spacing:-.05em;color:#1f1c2c}
+.s4 span{display:block;transform:translateY(-.08em)}
+.s5{background:#f6e4e7;gap:.6rem;grid-auto-flow:column;justify-content:center}
+.s5 i{width:62px;height:62px;border-radius:50%;padding:3px;background:#2a2231;display:block}
+.s5 i b{display:block;width:100%;height:100%;border-radius:50%;border:3px solid #f6e4e7;background:#2a2231}
+.s5 i:nth-child(2) b{background:#cdbdf0}.s5 i:nth-child(3) b{background:#f7cfb4}
+.s6{background:#fff;font:600 2.6rem/1 "Inter Tight",sans-serif;letter-spacing:-.05em;color:#1d1d1f;box-shadow:inset 0 -36px 0 #f2c6cf}
+.body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.body h2{font:500 1.35rem/1.2 "Figtree",sans-serif}
+.body p{color:var(--muted);font-size:.98rem}
+.body ul{color:var(--muted);font-size:.95rem;padding-left:1.1rem;margin-top:.2rem}
+.open{margin-top:auto;padding-top:.8rem;font-weight:500;text-decoration:underline;text-underline-offset:4px}
+.notes{margin-top:3rem;padding:1.5rem;border-radius:20px;background:#fff;border:1px solid #e2dae5;color:var(--muted);font-size:.95rem}
+.notes h2{font:500 1.1rem/1.2 "Figtree",sans-serif;color:var(--ink);margin-bottom:.5rem}
+.notes ul{padding-left:1.1rem}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Web de Gala Ferrer, fisioterapeuta: cuatro propuestas</h1>
+  <p class="intro">Misma persona y mismos contenidos (quién es, dónde está, especialidades y reserva), contados de cuatro maneras distintas en diseño y en funcionamiento. La 6 es una landing page de una sola página centrada en reservar. Todas se ven bien en móvil.</p>
+
+  <div class="grid">
+    <a class="card" href="propuesta-1/index.html">
+      <div class="swatch s1"><span>Gala</span></div>
+      <div class="body">
+        <h2>1. Pastel</h2>
+        <p>Moderna y luminosa, con tipografía fina y colores pastel. Tres combinaciones de 3 colores para elegir.</p>
+        <ul>
+          <li>Selector de colores en la propia web: peonía, salvia o lila</li>
+          <li>Especialidades en mosaico y tarifas claras</li>
+          <li>Reserva en 4 pasos con calendario y horas libres</li>
+        </ul>
+        <span class="open">Ver propuesta 1</span>
+      </div>
+    </a>
+    <a class="card" href="propuesta-4/index.html">
+      <div class="swatch s4"><span>gala</span></div>
+      <div class="body">
+        <h2>4. Lookbook</h2>
+        <p>Tipografía enorme de marca de moda y colores pastel planos: lavanda, rosa, menta y melocotón.</p>
+        <ul>
+          <li>Especialidades en tarjetas que se apilan al hacer scroll</li>
+          <li>Reserva con calendario mensual y resumen con precio</li>
+          <li>Comprobador de código postal para el domicilio</li>
+        </ul>
+        <span class="open">Ver propuesta 4</span>
+      </div>
+    </a>
+    <a class="card" href="propuesta-5/index.html">
+      <div class="swatch s5"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+      <div class="body">
+        <h2>5. Stories</h2>
+        <p>La web se recorre como historias del móvil, el formato en el que su público ya la conoce.</p>
+        <ul>
+          <li>Gestos de la app: cubo entre historias, mantener para pausar, deslizar y doble toque</li>
+          <li>Mapa del cuerpo con deslizador de molestia y cuenta atrás al próximo hueco</li>
+          <li>La barra de respuesta envía el WhatsApp</li>
+        </ul>
+        <span class="open">Ver propuesta 5</span>
+      </div>
+    </a>
+    <a class="card" href="propuesta-6/index.html">
+      <div class="swatch s6">Gala</div>
+      <div class="body">
+        <h2>6. Producto (landing)</h2>
+        <p>Landing al estilo de las páginas de producto de Apple: blanco, negro y un toque de rosa, con animaciones ligadas al scroll.</p>
+        <ul>
+          <li>Retrato que se amplía a pantalla completa y texto que se ilumina al bajar</li>
+          <li>Especialidades sobre un cuerpo que se ilumina en cada zona</li>
+          <li>Reserva tipo configurador con barra de resumen y precio</li>
+        </ul>
+        <span class="open">Ver propuesta 6</span>
+      </div>
+    </a>
+  </div>
+
+  <section class="notes">
+    <h2>A tener en cuenta</h2>
+    <ul>
+      <li>Nombre, dirección, teléfono, nº de colegiada y precios son inventados para la propuesta.</li>
+      <li>Las fotos de Gala están marcadas como pendientes: el diseño cuenta con un retrato y fotos del estudio.</li>
+      <li>Las reservas son una demostración. En la versión final se conectan a su agenda (o a WhatsApp, en la propuesta 5).</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

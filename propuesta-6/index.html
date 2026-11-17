@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gala Ferrer. Fisioterapia, a tu medida.</title>
+<meta name="description" content="Gala Ferrer, fisioterapeuta en Barcelona. Sesiones de 50 minutos en su estudio del Eixample o en tu casa. Elige tratamiento, día y hora y reserva en un minuto.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Gala Ferrer. Fisioterapia, a tu medida.">
+<meta property="og:description" content="En el estudio o en tu casa. Reserva en un minuto.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#ffffff;
+  --mist:#f5f5f7;
+  --ink:#1d1d1f;
+  --ink-2:#6e6e73;
+  --night:#000000;
+  --night-2:#161617;
+  --pink:#f2c6cf;
+  --pink-2:#fbe9ec;
+  --rose:#c2416b;
+  --rose-l:#ff8fb0;
+  --display:"Inter Tight",system-ui,sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --ease:cubic-bezier(.25,.1,.25,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--ink);font:400 1.0625rem/1.5 var(--body);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.75rem 1rem;z-index:99}
+.skip:focus{left:1rem;top:1rem}
+.wrap{width:min(1020px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.035em;line-height:1.05}
+.h-xl{font-size:clamp(3.2rem,9vw,7.5rem);letter-spacing:-.05em;line-height:.98}
+.h-l{font-size:clamp(2.4rem,6vw,4.75rem)}
+.h-m{font-size:clamp(1.8rem,3.6vw,2.75rem)}
+.sub{font:500 clamp(1.2rem,2.2vw,1.75rem)/1.3 var(--display);letter-spacing:-.02em;color:var(--ink-2)}
+.center{text-align:center}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.5rem;border-radius:999px;background:var(--rose);color:#fff;font-weight:500;text-decoration:none;border:0;cursor:pointer;transition:background .25s,transform .25s}
+.pill:hover{background:#a8335b}
+.pill:active{transform:scale(.97)}
+.pill.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.pill.ghost:hover{background:var(--pink-2)}
+.more{color:var(--rose);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;min-height:48px;gap:.25rem}
+.more:hover{text-decoration:underline}
+.more svg{width:12px;height:12px}
+
+/* Navegación */
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.78);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:52px;gap:1rem}
+.nav .brand{font:600 1.05rem var(--display);text-decoration:none;letter-spacing:-.02em}
+.nav nav{display:flex;gap:1.75rem;font-size:.88rem}
+.nav nav a{text-decoration:none;color:#424245;min-height:44px;display:flex;align-items:center}
+.nav nav a:hover{color:var(--ink)}
+.nav .pill{min-height:36px;padding:.4rem 1rem;font-size:.88rem}
+@media (max-width:760px){.nav nav{display:none}}
+
+/* Héroe */
+.hero{padding:clamp(4rem,10vh,7rem) 0 2.5rem;text-align:center}
+.hero h1 span{display:inline-block}
+.hero .sub{margin-top:1rem}
+.hero .ctas{display:flex;justify-content:center;align-items:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.js .hero .anim{opacity:0;filter:blur(12px);transform:translateY(24px);transition:opacity 1.1s var(--ease),filter 1.1s var(--ease),transform 1.1s var(--ease)}
+.js .hero.go .anim{opacity:1;filter:blur(0);transform:none}
+
+/* Zoom del retrato */
+.zoom{height:230vh;position:relative}
+.zoom .stick{position:sticky;top:52px;height:calc(100vh - 52px);display:grid;place-items:center;overflow:hidden}
+.zoom .shot{width:calc(var(--w,62) * 1vw);height:calc(var(--h,62) * 1%);border-radius:calc(var(--r,36) * 1px);background:var(--pink);position:relative;overflow:hidden;will-change:width,height}
+.zoom .shot .ph{position:absolute;left:50%;bottom:0;width:min(46vh,70%);transform:translateX(-50%)}
+.zoom .shot .lbl{position:absolute;top:1.25rem;left:1.25rem;background:rgba(255,255,255,.85);border-radius:999px;padding:.35rem .85rem;font-size:.85rem;color:var(--ink)}
+.zoom .over{position:absolute;inset:auto 0 12%;text-align:center;color:var(--ink);opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0)) * 30px))}
+.zoom .over h2{font-size:clamp(2.2rem,5.5vw,4.5rem)}
+.zoom .over p{font:500 clamp(1.1rem,2vw,1.5rem) var(--display);margin-top:.6rem}
+
+/* Texto que se ilumina */
+.manifest{height:240vh;position:relative;background:var(--white)}
+.manifest .stick{position:sticky;top:52px;height:calc(100vh - 52px);display:grid;place-items:center}
+.manifest p{font:600 clamp(2rem,5.2vw,4.2rem)/1.12 var(--display);letter-spacing:-.04em;max-width:18ch;width:min(1020px,100% - 2.5rem)}
+.manifest .w{color:#d2d2d7;transition:color .25s}
+.manifest .w.lit{color:var(--ink)}
+.manifest .w.lit.pk{color:var(--rose)}
+
+/* Especialidades en oscuro */
+.dark{background:var(--night);color:#f5f5f7}
+.dark .sub{color:#a1a1a6}
+.spec-intro{padding:clamp(5rem,12vw,9rem) 0 clamp(2rem,5vw,4rem)}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem)}
+.specs .visual{position:sticky;top:15vh;height:70vh;display:grid;place-items:center}
+.specs .visual svg{height:64vh;width:auto;max-width:100%;overflow:visible}
+.specs .visual .body{fill:none;stroke:#3a3a3c;stroke-width:2}
+.specs .visual .glow{transition:cx .9s var(--ease),cy .9s var(--ease),r .9s var(--ease)}
+.specs .steps{padding:15vh 0 25vh}
+.step{min-height:62vh;display:flex;flex-direction:column;justify-content:center;opacity:.25;transition:opacity .5s var(--ease)}
+.step.on{opacity:1}
+.step h3{font-size:clamp(2rem,4vw,3.25rem);margin-bottom:1rem}
+.step p{color:#a1a1a6;font-size:clamp(1.05rem,1.5vw,1.25rem);max-width:34ch;line-height:1.45}
+.step p b{color:#f5f5f7;font-weight:500}
+.step .price{margin-top:1.25rem;font:500 1rem var(--body);color:#f5f5f7}
+.step .price span{color:var(--rose-l)}
+@media (max-width:760px){
+  .specs{grid-template-columns:1fr}
+  .specs .visual{top:52px;height:34vh;z-index:1;background:var(--night);padding:1rem 0}
+  .specs .visual svg{height:calc(34vh - 2rem)}
+  .specs .steps{padding:0 0 10vh}
+  .step{min-height:56vh}
+}
+
+/* Dos maneras */
+.ways{background:var(--mist);padding:clamp(5rem,12vw,9rem) 0}
+.ways .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:clamp(2.5rem,5vw,4rem)}
+.way{background:var(--white);border-radius:28px;padding:clamp(2rem,4vw,3rem);display:flex;flex-direction:column;align-items:center;text-align:center}
+.way .ico{display:block;margin-bottom:1.25rem}
+.way .ico svg{width:56px;height:56px;stroke:var(--rose);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.way h3{font-size:clamp(1.8rem,3vw,2.4rem)}
+.way .from{font:600 1.1rem var(--display);margin-top:.6rem}
+.way .from small{display:block;font:400 .92rem var(--body);color:var(--ink-2);margin-top:.2rem}
+.way ul{list-style:none;padding:0;margin:1.75rem 0;width:100%;border-top:1px solid #d2d2d7}
+.way li{padding:1rem 0;border-bottom:1px solid #d2d2d7;color:var(--ink-2);font-size:.98rem}
+.way li b{display:block;color:var(--ink);font:600 1.05rem var(--display);margin-bottom:.15rem}
+.way .actions{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:.25rem}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.on{opacity:1;transform:none}
+.grid .reveal:nth-child(2){transition-delay:.12s}
+@media (max-width:760px){.ways .grid{grid-template-columns:1fr}}
+
+/* Cifras */
+.facts{padding:clamp(5rem,12vw,8rem) 0}
+.facts .row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem;margin-top:3rem;text-align:center}
+.facts b{display:block;font:600 clamp(3rem,7vw,5.5rem)/1 var(--display);letter-spacing:-.05em;color:var(--ink);font-variant-numeric:tabular-nums}
+.facts b small{font-size:clamp(1.2rem,2.8vw,2.2rem);letter-spacing:-.02em;margin-left:.1em}
+.facts span{display:block;color:var(--ink-2);margin-top:.6rem}
+@media (max-width:760px){.facts .row{grid-template-columns:1fr 1fr;row-gap:2.5rem}}
+
+/* Sobre Gala */
+.about{background:var(--mist);padding:clamp(5rem,12vw,9rem) 0}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.about .pic{aspect-ratio:4/5;border-radius:28px;background:var(--pink);position:relative;overflow:hidden}
+.about .pic span{position:absolute;top:1.25rem;left:1.25rem;background:rgba(255,255,255,.85);border-radius:999px;padding:.35rem .85rem;font-size:.85rem}
+.about p{color:var(--ink-2);font-size:1.15rem;margin-top:1.25rem;max-width:44ch}
+.about p b{color:var(--ink);font-weight:500}
+.about dl{margin-top:2rem;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.5rem;font-size:.98rem}
+.about dt{color:var(--ink-2)}
+@media (max-width:760px){.about .grid{grid-template-columns:1fr}.about .pic{max-width:420px;width:100%;margin-inline:auto}}
+
+/* Configurador de reserva */
+.buy{padding:clamp(5rem,12vw,8rem) 0 10rem}
+.buy .head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid #d2d2d7}
+.buy .head p{color:var(--ink-2)}
+.q{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:2rem;padding:2.75rem 0;border-bottom:1px solid #d2d2d7;transition:opacity .4s}
+.q.locked{opacity:.35;pointer-events:none}
+.q h3{font-size:1.6rem}
+.q h3 small{display:block;font:400 1rem var(--body);color:var(--ink-2);margin-top:.4rem;letter-spacing:-.01em}
+.opts{display:grid;gap:.75rem}
+.opts.two{grid-template-columns:1fr 1fr}
+.opts.chips{grid-template-columns:repeat(auto-fill,minmax(118px,1fr))}
+.opt{text-align:left;background:var(--white);border:1.5px solid #d2d2d7;border-radius:16px;padding:1rem 1.15rem;cursor:pointer;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:border-color .2s,box-shadow .2s}
+.opt:hover{border-color:#86868b}
+.opt[aria-pressed="true"]{border-color:var(--rose);box-shadow:0 0 0 1px var(--rose)}
+.opt b{font-weight:600}
+.opt small{display:block;color:var(--ink-2);font-size:.88rem;margin-top:.15rem}
+.opt .pr{color:var(--ink);font-weight:500;white-space:nowrap}
+.opts.chips .opt{justify-content:center;text-align:center;flex-direction:column;gap:0}
+.opt:disabled{opacity:.4;cursor:default;text-decoration:line-through}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.form label{display:flex;flex-direction:column;gap:.35rem;font-size:.9rem;color:var(--ink-2)}
+.form input{min-height:56px;border-radius:14px;border:1.5px solid #d2d2d7;padding:0 1rem;font-size:1rem;color:var(--ink);background:#fff}
+.form input:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 1px var(--rose)}
+.form .chk{grid-column:1/-1;flex-direction:row;align-items:flex-start;gap:.6rem}
+.form .chk input{min-height:0;width:20px;height:20px;accent-color:var(--rose);margin-top:.1rem;flex:none}
+.err{grid-column:1/-1;color:#c0123c;font-size:.92rem;min-height:1.3em}
+.hp{position:absolute;left:-9999px}
+@media (max-width:760px){.q{grid-template-columns:1fr;gap:1.25rem}.opts.two,.form{grid-template-columns:1fr}}
+
+/* Barra de resumen */
+.bag{position:fixed;left:0;right:0;bottom:0;z-index:25;background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:1px solid rgba(0,0,0,.08);transform:translateY(110%);transition:transform .5s var(--ease)}
+.bag.on{transform:none}
+.bag .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px;padding:.6rem 0}
+.bag .txt{min-width:0}
+.bag .txt b{display:block;font:600 1.05rem var(--display)}
+.bag .txt span{display:block;color:var(--ink-2);font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bag .total{font:600 1.4rem var(--display);margin-right:.5rem}
+.bag .right{display:flex;align-items:center;gap:.75rem;flex:none}
+.bag .pill:disabled{background:#e8e8ed;color:#515154;cursor:default}
+
+.done{padding:3rem 0;text-align:center}
+.done .ok{width:84px;height:84px;margin:0 auto 1.5rem;border-radius:50%;background:var(--pink-2);display:grid;place-items:center}
+.done .ok path{stroke-dasharray:30;stroke-dashoffset:30;animation:draw .6s .2s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.done p{color:var(--ink-2);margin-top:.8rem;font-size:1.1rem}
+
+footer{background:var(--mist);color:var(--ink-2);font-size:.8rem;padding:2rem 0 3rem;line-height:1.6}
+footer .fine{padding-bottom:1rem;border-bottom:1px solid #d2d2d7}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1rem}
+footer nav{display:flex;flex-wrap:wrap;gap:1.25rem}
+footer a{text-decoration:none;color:#424245}
+footer a:hover{text-decoration:underline}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .js .hero .anim{opacity:1;filter:none;transform:none}
+  .reveal{opacity:1;transform:none}
+  .zoom,.manifest{height:auto}
+  .zoom .stick,.manifest .stick{position:static;height:auto;padding:3rem 0}
+  .zoom .shot{width:min(1020px,100% - 2.5rem);height:70vh}
+  .zoom .over{opacity:1;transform:none}
+  .manifest .w{color:var(--ink)}
+  .done .ok path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#main">Gala Ferrer</a>
+    <nav aria-label="Principal">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#maneras">Estudio o casa</a>
+      <a href="#gala">Sobre Gala</a>
+    </nav>
+    <a class="pill" href="#reservar">Reservar</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <h1 class="h-xl anim">Gala Ferrer.</h1>
+      <p class="sub anim" style="transition-delay:.15s">Fisioterapia, a tu medida.</p>
+      <div class="ctas anim" style="transition-delay:.3s">
+        <a class="pill" href="#reservar">Reservar sesión</a>
+        <a class="more" href="#especialidades">Ver especialidades <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="zoom" id="zoom" aria-label="Retrato de Gala">
+    <div class="stick">
+      <div class="shot" id="shot" role="img" aria-label="Retrato de Gala Ferrer">
+        <span class="lbl">Foto de Gala, pendiente</span>
+        <svg class="ph" viewBox="0 0 400 420" aria-hidden="true"><path d="M200 40c-50 0-80 38-80 90 0 40 20 68 44 83-64 15-120 64-138 207h348c-18-143-74-192-138-207 24-15 44-43 44-83 0-52-30-90-80-90z" fill="#fff" opacity=".5"/></svg>
+        <div class="over" id="over">
+          <h2>En su estudio. O en tu casa.</h2>
+          <p>Eixample, Barcelona y área metropolitana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="manifest" id="manifest" aria-label="Cómo trabaja">
+    <div class="stick">
+      <p id="mtext">Cincuenta minutos. Una sola fisioterapeuta. Toda la sesión es para ti, de la primera pregunta al último ejercicio.</p>
+    </div>
+  </section>
+
+  <section class="dark" id="especialidades" aria-labelledby="t-esp">
+    <div class="wrap spec-intro center">
+      <h2 class="h-l reveal" id="t-esp">Lo que trata.</h2>
+      <p class="sub reveal" style="margin-top:1rem">Seis especialidades. Una misma forma de trabajar.</p>
+    </div>
+    <div class="wrap specs">
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 200 440">
+          <defs><radialGradient id="gl"><stop offset="0" stop-color="#ff8fb0" stop-opacity=".9"/><stop offset=".5" stop-color="#ff8fb0" stop-opacity=".25"/><stop offset="1" stop-color="#ff8fb0" stop-opacity="0"/></radialGradient></defs>
+          <circle class="glow" id="glow" cx="100" cy="150" r="60" fill="url(#gl)"/>
+          <g class="body" stroke-linejoin="round"><ellipse cx="100" cy="40" rx="24" ry="30"/><path d="M90 68h20v20H90z"/><path d="M60 92Q100 82 140 92L146 122Q138 162 132 205H68Q62 162 54 122Z"/><path d="M58 96Q40 100 36 140L26 228Q24 240 32 240Q39 240 40 228L54 152Z"/><path d="M142 96Q160 100 164 140L174 228Q176 240 168 240Q161 240 160 228L146 152Z"/><path d="M68 205H98L94 300L90 410Q90 422 80 422Q71 422 73 410L70 300Z"/><path d="M102 205H132L130 300L127 410Q129 422 120 422Q110 422 110 410L106 300Z"/></g>
+          <circle id="dot" cx="100" cy="150" r="5" fill="#fff" style="transition:cx .9s var(--ease),cy .9s var(--ease)"/>
+        </svg>
+      </div>
+      <div class="steps" id="steps"></div>
+    </div>
+  </section>
+
+  <section class="ways" id="maneras" aria-labelledby="t-ways">
+    <div class="wrap">
+      <div class="center">
+        <h2 class="h-l reveal" id="t-ways">Dos maneras de verla.</h2>
+        <p class="sub reveal" style="margin-top:1rem">El mismo tratamiento. Tú eliges dónde.</p>
+      </div>
+      <div class="grid">
+        <article class="way reveal">
+          <div class="ico"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 38V16l14-9 14 9v22"/><path d="M4 38h36M17 38V26h10v12"/></svg></div>
+          <h3>Estudio</h3>
+          <p class="from">Desde 65 €<small>por sesión de 50 minutos</small></p>
+          <ul>
+            <li><b>Eixample</b>Carrer de València, 284, 1º 2ª</li>
+            <li><b>Metro Passeig de Gràcia</b>L2, L3 y L4, a dos calles</li>
+            <li><b>L a V, 9 a 20 h</b>Sábados de 10 a 14 h</li>
+          </ul>
+          <div class="actions">
+            <a class="pill" href="#reservar" data-place="estudio">Reservar en el estudio</a>
+            <a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+Valencia+284+Barcelona" target="_blank" rel="noopener">Cómo llegar <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          </div>
+        </article>
+        <article class="way reveal">
+          <div class="ico"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M6 20 22 7l16 13"/><path d="M10 17v21h24V17"/><path d="M18 30c0-2 2-4 4-4s4 2 4 4v8h-8z"/></svg></div>
+          <h3>A domicilio</h3>
+          <p class="from">Desde 90 €<small>en Barcelona ciudad; 100 € área metropolitana</small></p>
+          <ul>
+            <li><b>Todo incluido</b>Camilla, aceites y toallas</li>
+            <li><b>Barcelona y alrededores</b>También en hoteles</li>
+            <li><b>Mismo horario</b>Mismo tratamiento que en el estudio</li>
+          </ul>
+          <div class="actions">
+            <a class="pill" href="#reservar" data-place="casa">Reservar a domicilio</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="La sesión en cifras">
+    <div class="wrap center">
+      <h2 class="h-l reveal">La sesión, en cifras.</h2>
+      <div class="row">
+        <div class="reveal"><b data-count="50">0<small>min</small></b><span>de sesión, siempre</span></div>
+        <div class="reveal"><b data-count="6">0</b><span>especialidades</span></div>
+        <div class="reveal"><b data-count="3">0</b><span>idiomas: castellano, català, English</span></div>
+        <div class="reveal"><b data-count="1">0</b><span>fisioterapeuta, de principio a fin</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="gala" aria-labelledby="t-gala">
+    <div class="wrap grid">
+      <div class="pic reveal" role="img" aria-label="Gala en su estudio"><span>Foto del estudio, pendiente</span></div>
+      <div class="reveal">
+        <h2 class="h-m" id="t-gala">Hola, soy Gala.</h2>
+        <p><b>Tengo 30 años y me encanta lo bien hecho.</b> En fisioterapia eso es técnica precisa, tiempo de verdad y explicarte lo que te pasa con palabras claras.</p>
+        <p>Atiendo a pocas personas al día. Así cada sesión es entera para ti.</p>
+        <dl>
+          <dt>Colegiada</dt><dd>CFC nº 12.345 (dato de ejemplo)</dd>
+          <dt>Formación</dt><dd>Máster en fisioterapia deportiva</dd>
+          <dt>Especialista</dt><dd>Suelo pélvico y drenaje linfático</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="buy" id="reservar" aria-labelledby="t-buy">
+    <div class="wrap" id="buyBody">
+      <div class="head">
+        <h2 class="h-l" id="t-buy">Reserva tu sesión.</h2>
+        <p>Cuatro elecciones. Gala te confirma por WhatsApp.</p>
+      </div>
+      <div class="q" id="q1">
+        <h3>¿Dónde?<small>Puedes cambiarlo después.</small></h3>
+        <div class="opts two" role="group" aria-label="Dónde" data-k="place">
+          <button type="button" class="opt" aria-pressed="false" data-v="estudio"><span><b>Estudio</b><small>Eixample</small></span><span class="pr">65 €</span></button>
+          <button type="button" class="opt" aria-pressed="false" data-v="casa"><span><b>A domicilio</b><small>Barcelona y área metropolitana</small></span><span class="pr">90 €</span></button>
+        </div>
+      </div>
+      <div class="q locked" id="q2">
+        <h3>Tratamiento<small>Si no lo sabes, empieza por la valoración.</small></h3>
+        <div class="opts" role="group" aria-label="Tratamiento" data-k="svc" id="svcOpts"></div>
+      </div>
+      <div class="q locked" id="q3">
+        <h3>Día<small>Próximos días con huecos.</small></h3>
+        <div class="opts chips" role="group" aria-label="Día" data-k="day" id="dayOpts"></div>
+      </div>
+      <div class="q locked" id="q4">
+        <h3>Hora<small>Las tachadas ya están cogidas.</small></h3>
+        <div class="opts chips" role="group" aria-label="Hora" data-k="time" id="timeOpts"><p style="color:var(--ink-2)">Elige primero un día.</p></div>
+      </div>
+      <form class="q locked" id="q5" novalidate>
+        <h3>Tus datos<small>Solo para confirmarte la cita.</small></h3>
+        <div class="form">
+          <label>Nombre<input id="fName" autocomplete="name"></label>
+          <label>Teléfono<input id="fTel" type="tel" inputmode="tel" autocomplete="tel"></label>
+          <div class="hp" aria-hidden="true"><label>No rellenar<input id="fWeb" tabindex="-1" autocomplete="off"></label></div>
+          <label class="chk"><input type="checkbox" id="fPriv"><span>Acepto la <a href="../legal.html#privacidad">política de privacidad</a></span></label>
+          <p class="err" id="fErr" role="alert"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="bag" id="bag" aria-live="polite">
+  <div class="wrap">
+    <div class="txt"><b>Tu sesión</b><span id="bagTxt">Elige dónde</span></div>
+    <div class="right"><span class="total" id="bagTotal">—</span><button class="pill" id="bagBtn" type="button" disabled>Continuar</button></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">Propuesta de diseño. Nombre, dirección, precios, horarios, teléfono y número de colegiada son datos de ejemplo. Las reservas de esta demostración no envían ningún dato.</p>
+    <div class="row">
+      <p>Gala Ferrer, fisioterapeuta colegiada. <a href="tel:+34600000000">600 00 00 00</a></p>
+      <nav aria-label="Legal">
+        <a href="../legal.html#aviso">Aviso legal</a>
+        <a href="../legal.html#privacidad">Privacidad</a>
+        <a href="../legal.html#cookies">Cookies</a>
+        <a href="../index.html">Volver a las propuestas</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+  requestAnimationFrame(() => requestAnimationFrame(() => $('#hero').classList.add('go')));
+
+  const T = [
+    {n:'Suelo pélvico', s:'Embarazo y posparto', d:'Pérdidas de orina, diástasis, <b>preparación al parto</b> y recuperación después.', e:70, c:95, x:100, y:198, r:46},
+    {n:'Deportiva', s:'Lesiones y vuelta al entreno', d:'Esguinces, roturas fibrilares y tendinopatías. <b>Un plan para volver</b>, no solo para que deje de doler.', e:65, c:90, x:84, y:318, r:44},
+    {n:'Espalda y cuello', s:'Contracturas y cervicales', d:'Lumbalgia, cervicalgia y la carga de <b>muchas horas de pantalla</b>.', e:65, c:90, x:100, y:120, r:58},
+    {n:'Drenaje linfático', s:'Postoperatorio', d:'Drenaje manual y recuperación <b>tras cirugía estética</b> o reparadora.', e:70, c:95, x:100, y:170, r:72},
+    {n:'Mandíbula', s:'ATM y bruxismo', d:'Chasquidos, dolor al masticar y tensión. <b>Coordinado con tu dentista.</b>', e:65, c:90, x:100, y:50, r:30},
+    {n:'Valoración', s:'Primera visita', d:'Te escucho, te exploro y <b>te explico el plan</b> antes de empezar.', e:65, c:90, x:100, y:220, r:150}
+  ];
+
+  // ---- Especialidades con el cuerpo fijo
+  $('#steps').innerHTML = T.map((t, i) => `<div class="step" data-i="${i}"><h3>${t.n}.</h3><p>${t.d}</p><p class="price">50 min. <span>Desde ${t.e} €</span></p></div>`).join('');
+  const glow = $('#glow'), dot = $('#dot');
+  const setZone = i => {
+    const t = T[i];
+    glow.setAttribute('cx', t.x); glow.setAttribute('cy', t.y); glow.setAttribute('r', t.r);
+    dot.setAttribute('cx', t.x); dot.setAttribute('cy', t.y);
+    dot.style.opacity = i === 5 ? 0 : 1;
+    $$('.step').forEach((s, k) => s.classList.toggle('on', k === i));
+  };
+  setZone(0);
+  const sio = new IntersectionObserver(en => en.forEach(x => { if (x.isIntersecting) setZone(+x.target.dataset.i); }), {rootMargin:'-45% 0px -45% 0px'});
+  $$('.step').forEach(s => sio.observe(s));
+
+  // ---- Apariciones y contadores
+  const rio = new IntersectionObserver(en => en.forEach(x => {
+    if (!x.isIntersecting) return;
+    x.target.classList.add('on'); rio.unobserve(x.target);
+    const b = x.target.querySelector('[data-count]');
+    if (b) count(b);
+  }), {threshold:.2});
+  function count(b){
+    const to = +b.dataset.count, unit = b.querySelector('small')?.outerHTML || '';
+    if (reduced) { b.innerHTML = to + unit; return; }
+    const t0 = performance.now(), dur = 1400;
+    const f = t => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); b.innerHTML = Math.round(to * e) + unit; if (p < 1) requestAnimationFrame(f); };
+    requestAnimationFrame(f);
+  }
+  $$('.reveal').forEach(el => reduced ? (el.classList.add('on'), el.querySelector('[data-count]') && count(el.querySelector('[data-count]'))) : rio.observe(el));
+
+  // ---- Texto que se ilumina
+  const mt = $('#mtext');
+  mt.innerHTML = mt.textContent.split(' ').map(w => `<span class="w${/ti\.?$|tuya/.test(w) ? ' pk' : ''}">${w}</span>`).join(' ');
+  const words = $$('#mtext .w');
+
+  // ---- Bucle de scroll
+  const zoom = $('#zoom'), shot = $('#shot'), over = $('#over'), man = $('#manifest');
+  const prog = el => { const r = el.getBoundingClientRect(); return Math.min(1, Math.max(0, -r.top / (r.height - innerHeight))); };
+  let ticking = false;
+  function frame(){
+    ticking = false;
+    const small = innerWidth < 760;
+    const p = prog(zoom), e = Math.min(1, p / .65);
+    const ease = e * e * (3 - 2 * e);
+    const w0 = small ? 86 : 62, h0 = small ? 62 : 70;
+    shot.style.setProperty('--w', w0 + (100 - w0) * ease);
+    shot.style.setProperty('--h', h0 + (100 - h0) * ease);
+    shot.style.setProperty('--r', 36 * (1 - ease));
+    over.style.setProperty('--o', Math.max(0, (p - .55) / .3).toFixed(3));
+    const q = prog(man), lit = Math.round(q * 1.15 * words.length);
+    words.forEach((w, i) => w.classList.toggle('lit', i < lit));
+  }
+  if (!reduced) { addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, {passive:true}); addEventListener('resize', frame); frame(); }
+
+  // ---- Configurador
+  const today = new Date(); today.setHours(0,0,0,0);
+  const st = {place:null, svc:null, day:null, time:null};
+  const dn = ['dom','lun','mar','mié','jue','vie','sáb'], mn = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const days = []; for (let i = 1; days.length < 8; i++){ const d = new Date(today); d.setDate(d.getDate() + i); if (d.getDay()) days.push(d); }
+  const slots = d => (d.getDay() === 6 ? ['10:00','11:15','12:30'] : ['9:00','10:15','11:30','13:00','16:00','17:15','18:30','19:30']).map((h, i) => ({h, busy:(d.getDate() * 7 + i * 3) % 4 === 0}));
+  const price = () => st.svc == null ? (st.place === 'casa' ? 90 : 65) : (st.place === 'casa' ? T[st.svc].c : T[st.svc].e);
+  const order = [5,0,1,2,3,4];
+  function renderSvc(){
+    $('#svcOpts').innerHTML = order.map(i => { const t = T[i]; return `<button type="button" class="opt" aria-pressed="${st.svc === i}" data-v="${i}"><span><b>${t.n}</b><small>${t.s}</small></span><span class="pr">${st.place === 'casa' ? t.c : t.e} €</span></button>`; }).join('');
+  }
+  $('#dayOpts').innerHTML = days.map((d, i) => `<button type="button" class="opt" aria-pressed="false" data-v="${i}"><b>${dn[d.getDay()]} ${d.getDate()}</b><small>${mn[d.getMonth()]}</small></button>`).join('');
+  function renderTimes(){
+    if (st.day == null) return;
+    $('#timeOpts').innerHTML = slots(days[st.day]).map(s => `<button type="button" class="opt" aria-pressed="${st.time === s.h}" data-v="${s.h}" ${s.busy ? 'disabled aria-label="' + s.h + ', ocupada"' : ''}><b>${s.h}</b></button>`).join('');
+  }
+  const unlock = id => { const q = $(id); if (q.classList.contains('locked')) { q.classList.remove('locked'); if (!reduced && q.getBoundingClientRect().top > innerHeight * .7) q.scrollIntoView({behavior:'smooth', block:'center'}); } };
+  function pick(k, v){
+    st[k] = v;
+    if (k === 'place') { $$('[data-k="place"] .opt').forEach(o => o.setAttribute('aria-pressed', o.dataset.v === v)); renderSvc(); unlock('#q2'); }
+    if (k === 'svc') { renderSvc(); unlock('#q3'); }
+    if (k === 'day') { st.time = null; $$('#dayOpts .opt').forEach(o => o.setAttribute('aria-pressed', +o.dataset.v === v)); renderTimes(); unlock('#q4'); }
+    if (k === 'time') { renderTimes(); unlock('#q5'); }
+    bag();
+  }
+  $$('.q .opts').forEach(g => g.addEventListener('click', e => {
+    const o = e.target.closest('.opt'); if (!o || o.disabled) return;
+    const k = g.dataset.k, v = k === 'place' || k === 'time' ? o.dataset.v : +o.dataset.v;
+    pick(k, v);
+    const again = g.querySelector(`.opt[data-v="${o.dataset.v}"]`); again && again.focus({preventScroll:true});
+  }));
+  $$('[data-place]').forEach(a => a.addEventListener('click', () => pick('place', a.dataset.place)));
+
+  const bagEl = $('#bag'), bagBtn = $('#bagBtn');
+  function bag(){
+    const parts = [];
+    if (st.place) parts.push(st.place === 'casa' ? 'A domicilio' : 'Estudio');
+    if (st.svc != null) parts.push(T[st.svc].n);
+    if (st.day != null) parts.push(`${dn[days[st.day].getDay()]} ${days[st.day].getDate()}${st.time ? ', ' + st.time : ''}`);
+    $('#bagTxt').textContent = parts.length ? parts.join(', ') : 'Elige dónde';
+    $('#bagTotal').textContent = st.place ? price() + ' €' : '—';
+    const ready = st.place && st.svc != null && st.day != null && st.time;
+    bagBtn.disabled = !ready;
+    bagBtn.textContent = ready ? 'Pedir esta hora' : 'Continuar';
+  }
+  // La barra aparece al llegar a la reserva
+  new IntersectionObserver(en => bagEl.classList.toggle('on', en[0].isIntersecting), {threshold:0, rootMargin:'0px 0px -30% 0px'}).observe($('#reservar'));
+
+  bagBtn.addEventListener('click', () => {
+    const err = $('#fErr'), n = $('#fName').value.trim(), t = $('#fTel').value.replace(/\D/g,'');
+    const fail = (m, el) => { err.textContent = m; el && el.focus(); $('#q5').scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block:'center'}); };
+    if (!n) return fail('Escribe tu nombre.', $('#fName'));
+    if (t.length < 9) return fail('Escribe un teléfono de 9 cifras.', $('#fTel'));
+    if (!$('#fPriv').checked) return fail('Acepta la política de privacidad para pedir la hora.', $('#fPriv'));
+    if ($('#fWeb').value) return;
+    const d = days[st.day];
+    $('#buyBody').innerHTML = `<div class="done" tabindex="-1" id="done"><div class="ok"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#c2416b" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="m11 21 6 6 12-13"/></svg></div>
+      <h2 class="h-m">Hora pedida, ${n.split(' ')[0]}.</h2>
+      <p>${T[st.svc].n}, ${dn[d.getDay()]} ${d.getDate()} de ${mn[d.getMonth()]} a las ${st.time}, ${st.place === 'casa' ? 'en tu casa' : 'en el estudio del Eixample'}. ${price()} €.</p>
+      <p>Gala te escribe por WhatsApp para confirmarla.</p>
+      <p style="font-size:.85rem;margin-top:1.5rem">Propuesta de diseño: no se ha enviado ningún dato.</p></div>`;
+    bagEl.classList.remove('on'); bagEl.hidden = true;
+    $('#done').focus();
+  });
+  $('#q5').addEventListener('submit', e => { e.preventDefault(); bagBtn.click(); });
+  bag();
+})();
+</script>
+</body>
+</html>

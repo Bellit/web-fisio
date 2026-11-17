@@ -1,0 +1,215 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T10:25:07.678Z",
+        "reason": "Claude: index swatches preview each proposal's gold-foil/holographic logo; user brief asks for 'brilli brilli' premium look"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-1/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:09.618Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; headings render at 2.4-7rem"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-1/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:09.833Z",
+        "reason": "Claude: flagged full-bleed sections inset by .wrap, padded cards and background-clip:text prices; verified visually"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-2/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:10.041Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; headings render at 2.4-7rem"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-2/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:10.254Z",
+        "reason": "Claude: flagged full-bleed sections inset by .wrap, padded cards and background-clip:text prices; verified visually"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-3/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:10.487Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; headings render at 2.4-7rem"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-3/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:10.723Z",
+        "reason": "Claude: flagged full-bleed sections inset by .wrap, padded cards and background-clip:text prices; verified visually"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "propuesta-3/index.html"
+        ],
+        "createdAt": "2026-11-09T10:27:10.973Z",
+        "reason": "Claude: typing indicator shown only while the booking assistant composes its reply, tied to user action"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-4/index.html"
+        ],
+        "createdAt": "2026-11-09T10:44:28.742Z",
+        "reason": "Claude: tile grid uses 2px grout gaps by design; every tile and section has its own inner padding"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-4/index.html"
+        ],
+        "createdAt": "2026-11-09T10:44:33.476Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; headings render at 2.4-6rem"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-6/index.html"
+        ],
+        "createdAt": "2026-11-09T10:48:40.755Z",
+        "reason": "Claude: seal has clamp(1.4rem,3vw,2.2rem) padding and leaflet panels 3.5-6rem vertical padding; static scan misses clamp()"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-5/index.html"
+        ],
+        "createdAt": "2026-11-09T10:48:40.982Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; display renders 1.7-6rem"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "propuesta-6/index.html"
+        ],
+        "createdAt": "2026-11-09T10:48:41.208Z",
+        "reason": "Claude: static detector reads unresolved clamp() sizes as 17px; display renders 1.7-6rem"
+      },
+      {
+        "rule": "nested-cards",
+        "value": "*",
+        "files": [
+          "propuesta-5/index.html"
+        ],
+        "createdAt": "2026-11-09T10:48:41.441Z",
+        "reason": "Claude: white stickers placed on a full-bleed story frame are the stories world's sticker grammar, not card-in-card"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "propuesta-5/index.html"
+        ],
+        "createdAt": "2026-11-09T10:58:50.607Z",
+        "reason": "Claude: story viewer's reply bar is absolutely positioned 12px from the frame edges; static scan misses the inset"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "grotesque",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T11:05:13.981Z",
+        "reason": "Claude: index swatches preview Bricolage Grotesque (P4) and Gilda Display (P6), both documented in DESIGN.md; detector splits the family names"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "display",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T11:05:14.226Z",
+        "reason": "Claude: index swatches preview Bricolage Grotesque (P4) and Gilda Display (P6), both documented in DESIGN.md; detector splits the family names"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "tight",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T12:59:22.428Z",
+        "reason": "Claude: Inter Tight swatch previews P6, documented in DESIGN.md"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "propuesta-6/index.html"
+        ],
+        "createdAt": "2026-11-09T12:59:22.631Z",
+        "reason": "Claude: client asked for an Apple product-page landing; Inter stands in for SF Pro and is documented as P6 body"
+      },
+      {
+        "rule": "clipped-overflow-container",
+        "value": "*",
+        "files": [
+          "propuesta-4/index.html"
+        ],
+        "createdAt": "2026-11-09T12:59:43.309Z",
+        "reason": "Claude: body overflow-x:clip is intentional to contain oversized type and full-bleed scroll effects; no popovers on the page"
+      },
+      {
+        "rule": "clipped-overflow-container",
+        "value": "*",
+        "files": [
+          "propuesta-6/index.html"
+        ],
+        "createdAt": "2026-11-09T12:59:43.513Z",
+        "reason": "Claude: body overflow-x:clip is intentional to contain oversized type and full-bleed scroll effects; no popovers on the page"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "propuesta-4/index.html"
+        ],
+        "createdAt": "2026-11-09T12:59:43.715Z",
+        "reason": "Claude: decorative aria-hidden ribbon repeating specialities listed in full below; stops under reduced motion"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "figtree",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-17T15:01:58.318Z",
+        "reason": "Claude: index is the neutral proposal selector in Figtree, documented as such in DESIGN.md overview; not one of the four worlds"
+      }
+    ]
+  }
+}

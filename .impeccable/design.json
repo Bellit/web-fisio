@@ -1,0 +1,1415 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T11:04:23.746Z",
+  "title": "Design System: Gala Ferrer, fisioterapia (six proposals)",
+  "extensions": {
+    "proposals": {
+      "p1": {
+        "name": "Pastel",
+        "path": "propuesta-1/index.html",
+        "contract": null,
+        "paletteSets": [
+          "peonia",
+          "salvia",
+          "lila"
+        ]
+      },
+      "p2": {
+        "name": "Atelier",
+        "path": "propuesta-2/index.html",
+        "contract": null
+      },
+      "p3": {
+        "name": "Joyero",
+        "path": "propuesta-3/index.html",
+        "contract": null,
+        "gradients": {
+          "nacre": "linear-gradient(135deg,#fdf8fb 0%,#ece2f0 30%,#f6ebe4 55%,#e4ecf3 80%,#fbf5f9 100%)",
+          "rose-gold": "linear-gradient(120deg,#8f5249 0%,#d9a493 40%,#f3d4c6 52%,#b8776a 70%,#8f5249 100%)"
+        }
+      },
+      "p4": {
+        "name": "Baldosa",
+        "path": "propuesta-4/index.html",
+        "contract": ".impeccable/surfaces/propuesta-4-index-html.md",
+        "paletteSets": [
+          "rosa",
+          "mar",
+          "malva"
+        ],
+        "storageKey": "gala-baldosa"
+      },
+      "p5": {
+        "name": "Stories",
+        "path": "propuesta-5/index.html",
+        "contract": ".impeccable/surfaces/propuesta-5-index-html.md",
+        "gradients": {
+          "ring": "conic-gradient(from 210deg,#f3bfcb,#cdbdf0,#f7cfb4,#f3bfcb)",
+          "page": "linear-gradient(180deg,#f6e4e7 0%,#f1dfd6 70%,#ecdccb 100%) fixed",
+          "frame1": "linear-gradient(180deg,#f3bfcb 0%,#f7cfb4 100%)"
+        }
+      },
+      "p6": {
+        "name": "Prospecto",
+        "path": "propuesta-6/index.html",
+        "contract": ".impeccable/surfaces/propuesta-6-index-html.md",
+        "crease": "1px dashed rgba(58,31,51,.4)",
+        "perforation": "mask: radial-gradient(circle 5px at 50% 0,#0000 98%,#000) 50% 0/14px 100% repeat-x"
+      }
+    },
+    "colorMeta": {
+      "shared-error": {
+        "role": "error",
+        "displayName": "Alert Red",
+        "proposal": "shared",
+        "canonical": "#a3122f",
+        "oklch": "oklch(46% 0.175 18.7)",
+        "tonalRamp": [
+          "oklch(15% 0.175 18.7)",
+          "oklch(25% 0.175 18.7)",
+          "oklch(36% 0.175 18.7)",
+          "oklch(48% 0.175 18.7)",
+          "oklch(60% 0.175 18.7)",
+          "oklch(72% 0.175 18.7)",
+          "oklch(84% 0.175 18.7)",
+          "oklch(95% 0.04 18.7)"
+        ]
+      },
+      "p1-peonia-c1": {
+        "role": "secondary",
+        "displayName": "P1 Peonía Pink",
+        "proposal": "p1",
+        "canonical": "#f5d5dc",
+        "oklch": "oklch(90.2% 0.037 3)",
+        "tonalRamp": [
+          "oklch(15% 0.037 3)",
+          "oklch(25% 0.037 3)",
+          "oklch(36% 0.037 3)",
+          "oklch(48% 0.037 3)",
+          "oklch(60% 0.037 3)",
+          "oklch(72% 0.037 3)",
+          "oklch(84% 0.037 3)",
+          "oklch(95% 0.037 3)"
+        ]
+      },
+      "p1-peonia-c2": {
+        "role": "secondary",
+        "displayName": "P1 Peonía Apricot",
+        "proposal": "p1",
+        "canonical": "#f8e4d3",
+        "oklch": "oklch(93% 0.032 62.8)",
+        "tonalRamp": [
+          "oklch(15% 0.032 62.8)",
+          "oklch(25% 0.032 62.8)",
+          "oklch(36% 0.032 62.8)",
+          "oklch(48% 0.032 62.8)",
+          "oklch(60% 0.032 62.8)",
+          "oklch(72% 0.032 62.8)",
+          "oklch(84% 0.032 62.8)",
+          "oklch(95% 0.032 62.8)"
+        ]
+      },
+      "p1-peonia-c3": {
+        "role": "secondary",
+        "displayName": "P1 Peonía Lavender",
+        "proposal": "p1",
+        "canonical": "#ddd7f3",
+        "oklch": "oklch(89.2% 0.039 295.4)",
+        "tonalRamp": [
+          "oklch(15% 0.039 295.4)",
+          "oklch(25% 0.039 295.4)",
+          "oklch(36% 0.039 295.4)",
+          "oklch(48% 0.039 295.4)",
+          "oklch(60% 0.039 295.4)",
+          "oklch(72% 0.039 295.4)",
+          "oklch(84% 0.039 295.4)",
+          "oklch(95% 0.039 295.4)"
+        ]
+      },
+      "p1-peonia-deep": {
+        "role": "primary",
+        "displayName": "P1 Peonía Deep Rose",
+        "proposal": "p1",
+        "canonical": "#b85d73",
+        "oklch": "oklch(59.3% 0.119 6.1)",
+        "tonalRamp": [
+          "oklch(15% 0.119 6.1)",
+          "oklch(25% 0.119 6.1)",
+          "oklch(36% 0.119 6.1)",
+          "oklch(48% 0.119 6.1)",
+          "oklch(60% 0.119 6.1)",
+          "oklch(72% 0.119 6.1)",
+          "oklch(84% 0.119 6.1)",
+          "oklch(95% 0.04 6.1)"
+        ]
+      },
+      "p1-salvia-c1": {
+        "role": "secondary",
+        "displayName": "P1 Salvia Sage",
+        "proposal": "p1",
+        "canonical": "#d3e4d7",
+        "oklch": "oklch(90.3% 0.025 152.8)",
+        "tonalRamp": [
+          "oklch(15% 0.025 152.8)",
+          "oklch(25% 0.025 152.8)",
+          "oklch(36% 0.025 152.8)",
+          "oklch(48% 0.025 152.8)",
+          "oklch(60% 0.025 152.8)",
+          "oklch(72% 0.025 152.8)",
+          "oklch(84% 0.025 152.8)",
+          "oklch(95% 0.025 152.8)"
+        ]
+      },
+      "p1-salvia-c2": {
+        "role": "secondary",
+        "displayName": "P1 Salvia Blush",
+        "proposal": "p1",
+        "canonical": "#f2dfd9",
+        "oklch": "oklch(91.7% 0.023 38.3)",
+        "tonalRamp": [
+          "oklch(15% 0.023 38.3)",
+          "oklch(25% 0.023 38.3)",
+          "oklch(36% 0.023 38.3)",
+          "oklch(48% 0.023 38.3)",
+          "oklch(60% 0.023 38.3)",
+          "oklch(72% 0.023 38.3)",
+          "oklch(84% 0.023 38.3)",
+          "oklch(95% 0.023 38.3)"
+        ]
+      },
+      "p1-salvia-c3": {
+        "role": "secondary",
+        "displayName": "P1 Salvia Sky",
+        "proposal": "p1",
+        "canonical": "#d5e3ef",
+        "oklch": "oklch(90.9% 0.022 243.8)",
+        "tonalRamp": [
+          "oklch(15% 0.022 243.8)",
+          "oklch(25% 0.022 243.8)",
+          "oklch(36% 0.022 243.8)",
+          "oklch(48% 0.022 243.8)",
+          "oklch(60% 0.022 243.8)",
+          "oklch(72% 0.022 243.8)",
+          "oklch(84% 0.022 243.8)",
+          "oklch(95% 0.022 243.8)"
+        ]
+      },
+      "p1-salvia-deep": {
+        "role": "primary",
+        "displayName": "P1 Salvia Deep Green",
+        "proposal": "p1",
+        "canonical": "#4f7a5d",
+        "oklch": "oklch(53.9% 0.066 154.1)",
+        "tonalRamp": [
+          "oklch(15% 0.066 154.1)",
+          "oklch(25% 0.066 154.1)",
+          "oklch(36% 0.066 154.1)",
+          "oklch(48% 0.066 154.1)",
+          "oklch(60% 0.066 154.1)",
+          "oklch(72% 0.066 154.1)",
+          "oklch(84% 0.066 154.1)",
+          "oklch(95% 0.04 154.1)"
+        ]
+      },
+      "p1-lila-c1": {
+        "role": "secondary",
+        "displayName": "P1 Lila Lilac",
+        "proposal": "p1",
+        "canonical": "#e4d8f5",
+        "oklch": "oklch(90.1% 0.041 304.3)",
+        "tonalRamp": [
+          "oklch(15% 0.041 304.3)",
+          "oklch(25% 0.041 304.3)",
+          "oklch(36% 0.041 304.3)",
+          "oklch(48% 0.041 304.3)",
+          "oklch(60% 0.041 304.3)",
+          "oklch(72% 0.041 304.3)",
+          "oklch(84% 0.041 304.3)",
+          "oklch(95% 0.04 304.3)"
+        ]
+      },
+      "p1-lila-c2": {
+        "role": "secondary",
+        "displayName": "P1 Lila Pink",
+        "proposal": "p1",
+        "canonical": "#f7dce7",
+        "oklch": "oklch(92% 0.033 351.2)",
+        "tonalRamp": [
+          "oklch(15% 0.033 351.2)",
+          "oklch(25% 0.033 351.2)",
+          "oklch(36% 0.033 351.2)",
+          "oklch(48% 0.033 351.2)",
+          "oklch(60% 0.033 351.2)",
+          "oklch(72% 0.033 351.2)",
+          "oklch(84% 0.033 351.2)",
+          "oklch(95% 0.033 351.2)"
+        ]
+      },
+      "p1-lila-c3": {
+        "role": "secondary",
+        "displayName": "P1 Lila Mint",
+        "proposal": "p1",
+        "canonical": "#d3efe7",
+        "oklch": "oklch(93% 0.031 176.6)",
+        "tonalRamp": [
+          "oklch(15% 0.031 176.6)",
+          "oklch(25% 0.031 176.6)",
+          "oklch(36% 0.031 176.6)",
+          "oklch(48% 0.031 176.6)",
+          "oklch(60% 0.031 176.6)",
+          "oklch(72% 0.031 176.6)",
+          "oklch(84% 0.031 176.6)",
+          "oklch(95% 0.031 176.6)"
+        ]
+      },
+      "p1-lila-deep": {
+        "role": "primary",
+        "displayName": "P1 Lila Deep Violet",
+        "proposal": "p1",
+        "canonical": "#7258a3",
+        "oklch": "oklch(52% 0.117 298.2)",
+        "tonalRamp": [
+          "oklch(15% 0.117 298.2)",
+          "oklch(25% 0.117 298.2)",
+          "oklch(36% 0.117 298.2)",
+          "oklch(48% 0.117 298.2)",
+          "oklch(60% 0.117 298.2)",
+          "oklch(72% 0.117 298.2)",
+          "oklch(84% 0.117 298.2)",
+          "oklch(95% 0.04 298.2)"
+        ]
+      },
+      "p1-bg": {
+        "role": "neutral",
+        "displayName": "P1 Milk White",
+        "proposal": "p1",
+        "canonical": "#fdfbfc",
+        "oklch": "oklch(99% 0.002 345.2)",
+        "tonalRamp": [
+          "oklch(15% 0.002 345.2)",
+          "oklch(25% 0.002 345.2)",
+          "oklch(36% 0.002 345.2)",
+          "oklch(48% 0.002 345.2)",
+          "oklch(60% 0.002 345.2)",
+          "oklch(72% 0.002 345.2)",
+          "oklch(84% 0.002 345.2)",
+          "oklch(95% 0.002 345.2)"
+        ]
+      },
+      "p1-ink": {
+        "role": "primary",
+        "displayName": "P1 Aubergine Ink",
+        "proposal": "p1",
+        "canonical": "#2b2530",
+        "oklch": "oklch(27.6% 0.022 309.5)",
+        "tonalRamp": [
+          "oklch(15% 0.022 309.5)",
+          "oklch(25% 0.022 309.5)",
+          "oklch(36% 0.022 309.5)",
+          "oklch(48% 0.022 309.5)",
+          "oklch(60% 0.022 309.5)",
+          "oklch(72% 0.022 309.5)",
+          "oklch(84% 0.022 309.5)",
+          "oklch(95% 0.022 309.5)"
+        ]
+      },
+      "p1-ink-soft": {
+        "role": "neutral",
+        "displayName": "P1 Soft Aubergine",
+        "proposal": "p1",
+        "canonical": "#655b6b",
+        "oklch": "oklch(48.6% 0.028 312.9)",
+        "tonalRamp": [
+          "oklch(15% 0.028 312.9)",
+          "oklch(25% 0.028 312.9)",
+          "oklch(36% 0.028 312.9)",
+          "oklch(48% 0.028 312.9)",
+          "oklch(60% 0.028 312.9)",
+          "oklch(72% 0.028 312.9)",
+          "oklch(84% 0.028 312.9)",
+          "oklch(95% 0.028 312.9)"
+        ]
+      },
+      "p1-line": {
+        "role": "neutral",
+        "displayName": "P1 Hairline",
+        "proposal": "p1",
+        "canonical": "rgba(43,37,48,.12)"
+      },
+      "p2-petrol": {
+        "role": "neutral",
+        "displayName": "P2 Night Petrol",
+        "proposal": "p2",
+        "canonical": "#10282c",
+        "oklch": "oklch(25.9% 0.031 209.6)",
+        "tonalRamp": [
+          "oklch(15% 0.031 209.6)",
+          "oklch(25% 0.031 209.6)",
+          "oklch(36% 0.031 209.6)",
+          "oklch(48% 0.031 209.6)",
+          "oklch(60% 0.031 209.6)",
+          "oklch(72% 0.031 209.6)",
+          "oklch(84% 0.031 209.6)",
+          "oklch(95% 0.031 209.6)"
+        ]
+      },
+      "p2-petrol-2": {
+        "role": "neutral",
+        "displayName": "P2 Raised Petrol",
+        "proposal": "p2",
+        "canonical": "#163438",
+        "oklch": "oklch(30.4% 0.036 206.9)",
+        "tonalRamp": [
+          "oklch(15% 0.036 206.9)",
+          "oklch(25% 0.036 206.9)",
+          "oklch(36% 0.036 206.9)",
+          "oklch(48% 0.036 206.9)",
+          "oklch(60% 0.036 206.9)",
+          "oklch(72% 0.036 206.9)",
+          "oklch(84% 0.036 206.9)",
+          "oklch(95% 0.036 206.9)"
+        ]
+      },
+      "p2-ivory": {
+        "role": "neutral",
+        "displayName": "P2 Ivory",
+        "proposal": "p2",
+        "canonical": "#f5f0ea",
+        "oklch": "oklch(95.7% 0.01 72.7)",
+        "tonalRamp": [
+          "oklch(15% 0.01 72.7)",
+          "oklch(25% 0.01 72.7)",
+          "oklch(36% 0.01 72.7)",
+          "oklch(48% 0.01 72.7)",
+          "oklch(60% 0.01 72.7)",
+          "oklch(72% 0.01 72.7)",
+          "oklch(84% 0.01 72.7)",
+          "oklch(95% 0.01 72.7)"
+        ]
+      },
+      "p2-mist": {
+        "role": "neutral",
+        "displayName": "P2 Sea Mist",
+        "proposal": "p2",
+        "canonical": "#a9bdbb",
+        "oklch": "oklch(78.3% 0.022 189.4)",
+        "tonalRamp": [
+          "oklch(15% 0.022 189.4)",
+          "oklch(25% 0.022 189.4)",
+          "oklch(36% 0.022 189.4)",
+          "oklch(48% 0.022 189.4)",
+          "oklch(60% 0.022 189.4)",
+          "oklch(72% 0.022 189.4)",
+          "oklch(84% 0.022 189.4)",
+          "oklch(95% 0.022 189.4)"
+        ]
+      },
+      "p2-champagne": {
+        "role": "primary",
+        "displayName": "P2 Champagne",
+        "proposal": "p2",
+        "canonical": "#e2cda8",
+        "oklch": "oklch(85.6% 0.054 81.7)",
+        "tonalRamp": [
+          "oklch(15% 0.054 81.7)",
+          "oklch(25% 0.054 81.7)",
+          "oklch(36% 0.054 81.7)",
+          "oklch(48% 0.054 81.7)",
+          "oklch(60% 0.054 81.7)",
+          "oklch(72% 0.054 81.7)",
+          "oklch(84% 0.054 81.7)",
+          "oklch(95% 0.04 81.7)"
+        ]
+      },
+      "p2-blush": {
+        "role": "secondary",
+        "displayName": "P2 Blush",
+        "proposal": "p2",
+        "canonical": "#efc9bf",
+        "oklch": "oklch(86.6% 0.045 35.1)",
+        "tonalRamp": [
+          "oklch(15% 0.045 35.1)",
+          "oklch(25% 0.045 35.1)",
+          "oklch(36% 0.045 35.1)",
+          "oklch(48% 0.045 35.1)",
+          "oklch(60% 0.045 35.1)",
+          "oklch(72% 0.045 35.1)",
+          "oklch(84% 0.045 35.1)",
+          "oklch(95% 0.04 35.1)"
+        ]
+      },
+      "p2-line": {
+        "role": "neutral",
+        "displayName": "P2 Ivory Hairline",
+        "proposal": "p2",
+        "canonical": "rgba(245,240,234,.12)"
+      },
+      "p3-pearl": {
+        "role": "neutral",
+        "displayName": "P3 Pearl",
+        "proposal": "p3",
+        "canonical": "#f8f2f6",
+        "oklch": "oklch(96.7% 0.008 337.4)",
+        "tonalRamp": [
+          "oklch(15% 0.008 337.4)",
+          "oklch(25% 0.008 337.4)",
+          "oklch(36% 0.008 337.4)",
+          "oklch(48% 0.008 337.4)",
+          "oklch(60% 0.008 337.4)",
+          "oklch(72% 0.008 337.4)",
+          "oklch(84% 0.008 337.4)",
+          "oklch(95% 0.008 337.4)"
+        ]
+      },
+      "p3-plum": {
+        "role": "primary",
+        "displayName": "P3 Night Plum",
+        "proposal": "p3",
+        "canonical": "#2d2033",
+        "oklch": "oklch(26.8% 0.039 314.8)",
+        "tonalRamp": [
+          "oklch(15% 0.039 314.8)",
+          "oklch(25% 0.039 314.8)",
+          "oklch(36% 0.039 314.8)",
+          "oklch(48% 0.039 314.8)",
+          "oklch(60% 0.039 314.8)",
+          "oklch(72% 0.039 314.8)",
+          "oklch(84% 0.039 314.8)",
+          "oklch(95% 0.039 314.8)"
+        ]
+      },
+      "p3-plum-soft": {
+        "role": "neutral",
+        "displayName": "P3 Soft Plum",
+        "proposal": "p3",
+        "canonical": "#5e4c66",
+        "oklch": "oklch(44.5% 0.047 315.3)",
+        "tonalRamp": [
+          "oklch(15% 0.047 315.3)",
+          "oklch(25% 0.047 315.3)",
+          "oklch(36% 0.047 315.3)",
+          "oklch(48% 0.047 315.3)",
+          "oklch(60% 0.047 315.3)",
+          "oklch(72% 0.047 315.3)",
+          "oklch(84% 0.047 315.3)",
+          "oklch(95% 0.04 315.3)"
+        ]
+      },
+      "p3-rose": {
+        "role": "secondary",
+        "displayName": "P3 Old Rose",
+        "proposal": "p3",
+        "canonical": "#9c5d55",
+        "oklch": "oklch(54.7% 0.084 27.9)",
+        "tonalRamp": [
+          "oklch(15% 0.084 27.9)",
+          "oklch(25% 0.084 27.9)",
+          "oklch(36% 0.084 27.9)",
+          "oklch(48% 0.084 27.9)",
+          "oklch(60% 0.084 27.9)",
+          "oklch(72% 0.084 27.9)",
+          "oklch(84% 0.084 27.9)",
+          "oklch(95% 0.04 27.9)"
+        ]
+      },
+      "p3-line": {
+        "role": "neutral",
+        "displayName": "P3 Lilac Hairline",
+        "proposal": "p3",
+        "canonical": "#dccfdd",
+        "oklch": "oklch(86.9% 0.024 323.6)",
+        "tonalRamp": [
+          "oklch(15% 0.024 323.6)",
+          "oklch(25% 0.024 323.6)",
+          "oklch(36% 0.024 323.6)",
+          "oklch(48% 0.024 323.6)",
+          "oklch(60% 0.024 323.6)",
+          "oklch(72% 0.024 323.6)",
+          "oklch(84% 0.024 323.6)",
+          "oklch(95% 0.024 323.6)"
+        ]
+      },
+      "p4-rosa-t1": {
+        "role": "secondary",
+        "displayName": "P4 Rosa Pink Pigment",
+        "proposal": "p4",
+        "canonical": "#efc3c6",
+        "oklch": "oklch(85.6% 0.05 13.6)",
+        "tonalRamp": [
+          "oklch(15% 0.05 13.6)",
+          "oklch(25% 0.05 13.6)",
+          "oklch(36% 0.05 13.6)",
+          "oklch(48% 0.05 13.6)",
+          "oklch(60% 0.05 13.6)",
+          "oklch(72% 0.05 13.6)",
+          "oklch(84% 0.05 13.6)",
+          "oklch(95% 0.04 13.6)"
+        ]
+      },
+      "p4-rosa-t2": {
+        "role": "secondary",
+        "displayName": "P4 Rosa Verde Agua",
+        "proposal": "p4",
+        "canonical": "#bfdcd3",
+        "oklch": "oklch(87.1% 0.033 174.9)",
+        "tonalRamp": [
+          "oklch(15% 0.033 174.9)",
+          "oklch(25% 0.033 174.9)",
+          "oklch(36% 0.033 174.9)",
+          "oklch(48% 0.033 174.9)",
+          "oklch(60% 0.033 174.9)",
+          "oklch(72% 0.033 174.9)",
+          "oklch(84% 0.033 174.9)",
+          "oklch(95% 0.033 174.9)"
+        ]
+      },
+      "p4-rosa-t3": {
+        "role": "secondary",
+        "displayName": "P4 Rosa Ochre",
+        "proposal": "p4",
+        "canonical": "#ebd7a9",
+        "oklch": "oklch(88.4% 0.064 87.3)",
+        "tonalRamp": [
+          "oklch(15% 0.064 87.3)",
+          "oklch(25% 0.064 87.3)",
+          "oklch(36% 0.064 87.3)",
+          "oklch(48% 0.064 87.3)",
+          "oklch(60% 0.064 87.3)",
+          "oklch(72% 0.064 87.3)",
+          "oklch(84% 0.064 87.3)",
+          "oklch(95% 0.04 87.3)"
+        ]
+      },
+      "p4-rosa-deep": {
+        "role": "secondary",
+        "displayName": "P4 Rosa Deep",
+        "proposal": "p4",
+        "canonical": "#9a4a55",
+        "oklch": "oklch(51.2% 0.107 13)",
+        "tonalRamp": [
+          "oklch(15% 0.107 13)",
+          "oklch(25% 0.107 13)",
+          "oklch(36% 0.107 13)",
+          "oklch(48% 0.107 13)",
+          "oklch(60% 0.107 13)",
+          "oklch(72% 0.107 13)",
+          "oklch(84% 0.107 13)",
+          "oklch(95% 0.04 13)"
+        ]
+      },
+      "p4-mar-t1": {
+        "role": "secondary",
+        "displayName": "P4 Mar Sky Pigment",
+        "proposal": "p4",
+        "canonical": "#bfd6e6",
+        "oklch": "oklch(86.4% 0.033 238.2)",
+        "tonalRamp": [
+          "oklch(15% 0.033 238.2)",
+          "oklch(25% 0.033 238.2)",
+          "oklch(36% 0.033 238.2)",
+          "oklch(48% 0.033 238.2)",
+          "oklch(60% 0.033 238.2)",
+          "oklch(72% 0.033 238.2)",
+          "oklch(84% 0.033 238.2)",
+          "oklch(95% 0.033 238.2)"
+        ]
+      },
+      "p4-mar-t2": {
+        "role": "secondary",
+        "displayName": "P4 Mar Apricot",
+        "proposal": "p4",
+        "canonical": "#f1d2c3",
+        "oklch": "oklch(88.6% 0.04 47.4)",
+        "tonalRamp": [
+          "oklch(15% 0.04 47.4)",
+          "oklch(25% 0.04 47.4)",
+          "oklch(36% 0.04 47.4)",
+          "oklch(48% 0.04 47.4)",
+          "oklch(60% 0.04 47.4)",
+          "oklch(72% 0.04 47.4)",
+          "oklch(84% 0.04 47.4)",
+          "oklch(95% 0.04 47.4)"
+        ]
+      },
+      "p4-mar-t3": {
+        "role": "secondary",
+        "displayName": "P4 Mar Pale Green",
+        "proposal": "p4",
+        "canonical": "#d4e2c4",
+        "oklch": "oklch(89.4% 0.043 127.7)",
+        "tonalRamp": [
+          "oklch(15% 0.043 127.7)",
+          "oklch(25% 0.043 127.7)",
+          "oklch(36% 0.043 127.7)",
+          "oklch(48% 0.043 127.7)",
+          "oklch(60% 0.043 127.7)",
+          "oklch(72% 0.043 127.7)",
+          "oklch(84% 0.043 127.7)",
+          "oklch(95% 0.04 127.7)"
+        ]
+      },
+      "p4-mar-deep": {
+        "role": "secondary",
+        "displayName": "P4 Mar Deep",
+        "proposal": "p4",
+        "canonical": "#3d6a86",
+        "oklch": "oklch(50.4% 0.067 237.4)",
+        "tonalRamp": [
+          "oklch(15% 0.067 237.4)",
+          "oklch(25% 0.067 237.4)",
+          "oklch(36% 0.067 237.4)",
+          "oklch(48% 0.067 237.4)",
+          "oklch(60% 0.067 237.4)",
+          "oklch(72% 0.067 237.4)",
+          "oklch(84% 0.067 237.4)",
+          "oklch(95% 0.04 237.4)"
+        ]
+      },
+      "p4-malva-t1": {
+        "role": "secondary",
+        "displayName": "P4 Malva Lilac Pigment",
+        "proposal": "p4",
+        "canonical": "#d9c9ea",
+        "oklch": "oklch(85.9% 0.048 307.2)",
+        "tonalRamp": [
+          "oklch(15% 0.048 307.2)",
+          "oklch(25% 0.048 307.2)",
+          "oklch(36% 0.048 307.2)",
+          "oklch(48% 0.048 307.2)",
+          "oklch(60% 0.048 307.2)",
+          "oklch(72% 0.048 307.2)",
+          "oklch(84% 0.048 307.2)",
+          "oklch(95% 0.04 307.2)"
+        ]
+      },
+      "p4-malva-t2": {
+        "role": "secondary",
+        "displayName": "P4 Malva Pink",
+        "proposal": "p4",
+        "canonical": "#f3d6dd",
+        "oklch": "oklch(90.2% 0.033 1.5)",
+        "tonalRamp": [
+          "oklch(15% 0.033 1.5)",
+          "oklch(25% 0.033 1.5)",
+          "oklch(36% 0.033 1.5)",
+          "oklch(48% 0.033 1.5)",
+          "oklch(60% 0.033 1.5)",
+          "oklch(72% 0.033 1.5)",
+          "oklch(84% 0.033 1.5)",
+          "oklch(95% 0.033 1.5)"
+        ]
+      },
+      "p4-malva-t3": {
+        "role": "secondary",
+        "displayName": "P4 Malva Mint",
+        "proposal": "p4",
+        "canonical": "#cfe6e1",
+        "oklch": "oklch(90.7% 0.025 181.2)",
+        "tonalRamp": [
+          "oklch(15% 0.025 181.2)",
+          "oklch(25% 0.025 181.2)",
+          "oklch(36% 0.025 181.2)",
+          "oklch(48% 0.025 181.2)",
+          "oklch(60% 0.025 181.2)",
+          "oklch(72% 0.025 181.2)",
+          "oklch(84% 0.025 181.2)",
+          "oklch(95% 0.025 181.2)"
+        ]
+      },
+      "p4-malva-deep": {
+        "role": "secondary",
+        "displayName": "P4 Malva Deep",
+        "proposal": "p4",
+        "canonical": "#6a4f8f",
+        "oklch": "oklch(48.4% 0.104 302.1)",
+        "tonalRamp": [
+          "oklch(15% 0.104 302.1)",
+          "oklch(25% 0.104 302.1)",
+          "oklch(36% 0.104 302.1)",
+          "oklch(48% 0.104 302.1)",
+          "oklch(60% 0.104 302.1)",
+          "oklch(72% 0.104 302.1)",
+          "oklch(84% 0.104 302.1)",
+          "oklch(95% 0.04 302.1)"
+        ]
+      },
+      "p4-grout": {
+        "role": "neutral",
+        "displayName": "P4 Lime Grout",
+        "proposal": "p4",
+        "canonical": "#efefea",
+        "oklch": "oklch(95.1% 0.007 106.5)",
+        "tonalRamp": [
+          "oklch(15% 0.007 106.5)",
+          "oklch(25% 0.007 106.5)",
+          "oklch(36% 0.007 106.5)",
+          "oklch(48% 0.007 106.5)",
+          "oklch(60% 0.007 106.5)",
+          "oklch(72% 0.007 106.5)",
+          "oklch(84% 0.007 106.5)",
+          "oklch(95% 0.007 106.5)"
+        ]
+      },
+      "p4-white": {
+        "role": "neutral",
+        "displayName": "P4 Tile White",
+        "proposal": "p4",
+        "canonical": "#fcfcfa",
+        "oklch": "oklch(99.1% 0.003 106.4)",
+        "tonalRamp": [
+          "oklch(15% 0.003 106.4)",
+          "oklch(25% 0.003 106.4)",
+          "oklch(36% 0.003 106.4)",
+          "oklch(48% 0.003 106.4)",
+          "oklch(60% 0.003 106.4)",
+          "oklch(72% 0.003 106.4)",
+          "oklch(84% 0.003 106.4)",
+          "oklch(95% 0.003 106.4)"
+        ]
+      },
+      "p4-ink": {
+        "role": "primary",
+        "displayName": "P4 Slate Ink",
+        "proposal": "p4",
+        "canonical": "#2b2a36",
+        "oklch": "oklch(29.1% 0.022 288.8)",
+        "tonalRamp": [
+          "oklch(15% 0.022 288.8)",
+          "oklch(25% 0.022 288.8)",
+          "oklch(36% 0.022 288.8)",
+          "oklch(48% 0.022 288.8)",
+          "oklch(60% 0.022 288.8)",
+          "oklch(72% 0.022 288.8)",
+          "oklch(84% 0.022 288.8)",
+          "oklch(95% 0.022 288.8)"
+        ]
+      },
+      "p4-ink-soft": {
+        "role": "neutral",
+        "displayName": "P4 Soft Slate",
+        "proposal": "p4",
+        "canonical": "#4a4755",
+        "oklch": "oklch(40.6% 0.023 295.2)",
+        "tonalRamp": [
+          "oklch(15% 0.023 295.2)",
+          "oklch(25% 0.023 295.2)",
+          "oklch(36% 0.023 295.2)",
+          "oklch(48% 0.023 295.2)",
+          "oklch(60% 0.023 295.2)",
+          "oklch(72% 0.023 295.2)",
+          "oklch(84% 0.023 295.2)",
+          "oklch(95% 0.023 295.2)"
+        ]
+      },
+      "p5-ground": {
+        "role": "neutral",
+        "displayName": "P5 Blush Ground",
+        "proposal": "p5",
+        "canonical": "#f6e4e7",
+        "oklch": "oklch(93.4% 0.02 6)",
+        "tonalRamp": [
+          "oklch(15% 0.02 6)",
+          "oklch(25% 0.02 6)",
+          "oklch(36% 0.02 6)",
+          "oklch(48% 0.02 6)",
+          "oklch(60% 0.02 6)",
+          "oklch(72% 0.02 6)",
+          "oklch(84% 0.02 6)",
+          "oklch(95% 0.02 6)"
+        ]
+      },
+      "p5-ink": {
+        "role": "primary",
+        "displayName": "P5 Story Ink",
+        "proposal": "p5",
+        "canonical": "#2a2231",
+        "oklch": "oklch(26.8% 0.03 308.7)",
+        "tonalRamp": [
+          "oklch(15% 0.03 308.7)",
+          "oklch(25% 0.03 308.7)",
+          "oklch(36% 0.03 308.7)",
+          "oklch(48% 0.03 308.7)",
+          "oklch(60% 0.03 308.7)",
+          "oklch(72% 0.03 308.7)",
+          "oklch(84% 0.03 308.7)",
+          "oklch(95% 0.03 308.7)"
+        ]
+      },
+      "p5-ink-soft": {
+        "role": "neutral",
+        "displayName": "P5 Soft Ink",
+        "proposal": "p5",
+        "canonical": "#5a4c5e",
+        "oklch": "oklch(43.7% 0.034 318.7)",
+        "tonalRamp": [
+          "oklch(15% 0.034 318.7)",
+          "oklch(25% 0.034 318.7)",
+          "oklch(36% 0.034 318.7)",
+          "oklch(48% 0.034 318.7)",
+          "oklch(60% 0.034 318.7)",
+          "oklch(72% 0.034 318.7)",
+          "oklch(84% 0.034 318.7)",
+          "oklch(95% 0.034 318.7)"
+        ]
+      },
+      "p5-white": {
+        "role": "neutral",
+        "displayName": "P5 Sticker White",
+        "proposal": "p5",
+        "canonical": "#fffafb",
+        "oklch": "oklch(98.9% 0.005 3.3)",
+        "tonalRamp": [
+          "oklch(15% 0.005 3.3)",
+          "oklch(25% 0.005 3.3)",
+          "oklch(36% 0.005 3.3)",
+          "oklch(48% 0.005 3.3)",
+          "oklch(60% 0.005 3.3)",
+          "oklch(72% 0.005 3.3)",
+          "oklch(84% 0.005 3.3)",
+          "oklch(95% 0.005 3.3)"
+        ]
+      },
+      "p5-powder": {
+        "role": "secondary",
+        "displayName": "P5 Powder",
+        "proposal": "p5",
+        "canonical": "#f3bfcb",
+        "oklch": "oklch(85.4% 0.061 3.1)",
+        "tonalRamp": [
+          "oklch(15% 0.061 3.1)",
+          "oklch(25% 0.061 3.1)",
+          "oklch(36% 0.061 3.1)",
+          "oklch(48% 0.061 3.1)",
+          "oklch(60% 0.061 3.1)",
+          "oklch(72% 0.061 3.1)",
+          "oklch(84% 0.061 3.1)",
+          "oklch(95% 0.04 3.1)"
+        ]
+      },
+      "p5-lilac": {
+        "role": "secondary",
+        "displayName": "P5 Lilac",
+        "proposal": "p5",
+        "canonical": "#cdbdf0",
+        "oklch": "oklch(82.9% 0.072 299.2)",
+        "tonalRamp": [
+          "oklch(15% 0.072 299.2)",
+          "oklch(25% 0.072 299.2)",
+          "oklch(36% 0.072 299.2)",
+          "oklch(48% 0.072 299.2)",
+          "oklch(60% 0.072 299.2)",
+          "oklch(72% 0.072 299.2)",
+          "oklch(84% 0.072 299.2)",
+          "oklch(95% 0.04 299.2)"
+        ]
+      },
+      "p5-peach": {
+        "role": "secondary",
+        "displayName": "P5 Peach",
+        "proposal": "p5",
+        "canonical": "#f7cfb4",
+        "oklch": "oklch(88.2% 0.058 55.9)",
+        "tonalRamp": [
+          "oklch(15% 0.058 55.9)",
+          "oklch(25% 0.058 55.9)",
+          "oklch(36% 0.058 55.9)",
+          "oklch(48% 0.058 55.9)",
+          "oklch(60% 0.058 55.9)",
+          "oklch(72% 0.058 55.9)",
+          "oklch(84% 0.058 55.9)",
+          "oklch(95% 0.04 55.9)"
+        ]
+      },
+      "p5-sage": {
+        "role": "secondary",
+        "displayName": "P5 Sage",
+        "proposal": "p5",
+        "canonical": "#cfe3d4",
+        "oklch": "oklch(89.7% 0.029 153.3)",
+        "tonalRamp": [
+          "oklch(15% 0.029 153.3)",
+          "oklch(25% 0.029 153.3)",
+          "oklch(36% 0.029 153.3)",
+          "oklch(48% 0.029 153.3)",
+          "oklch(60% 0.029 153.3)",
+          "oklch(72% 0.029 153.3)",
+          "oklch(84% 0.029 153.3)",
+          "oklch(95% 0.029 153.3)"
+        ]
+      },
+      "p6-hue": {
+        "role": "neutral",
+        "displayName": "P6 Box Pink",
+        "proposal": "p6",
+        "canonical": "#f2c6cf",
+        "oklch": "oklch(86.7% 0.051 4.4)",
+        "tonalRamp": [
+          "oklch(15% 0.051 4.4)",
+          "oklch(25% 0.051 4.4)",
+          "oklch(36% 0.051 4.4)",
+          "oklch(48% 0.051 4.4)",
+          "oklch(60% 0.051 4.4)",
+          "oklch(72% 0.051 4.4)",
+          "oklch(84% 0.051 4.4)",
+          "oklch(95% 0.04 4.4)"
+        ]
+      },
+      "p6-hue-deep": {
+        "role": "secondary",
+        "displayName": "P6 Deep Box Pink",
+        "proposal": "p6",
+        "canonical": "#e7a9b6",
+        "oklch": "oklch(79.6% 0.075 5)",
+        "tonalRamp": [
+          "oklch(15% 0.075 5)",
+          "oklch(25% 0.075 5)",
+          "oklch(36% 0.075 5)",
+          "oklch(48% 0.075 5)",
+          "oklch(60% 0.075 5)",
+          "oklch(72% 0.075 5)",
+          "oklch(84% 0.075 5)",
+          "oklch(95% 0.04 5)"
+        ]
+      },
+      "p6-paper": {
+        "role": "neutral",
+        "displayName": "P6 Leaflet Paper",
+        "proposal": "p6",
+        "canonical": "#fff8f9",
+        "oklch": "oklch(98.5% 0.008 7.3)",
+        "tonalRamp": [
+          "oklch(15% 0.008 7.3)",
+          "oklch(25% 0.008 7.3)",
+          "oklch(36% 0.008 7.3)",
+          "oklch(48% 0.008 7.3)",
+          "oklch(60% 0.008 7.3)",
+          "oklch(72% 0.008 7.3)",
+          "oklch(84% 0.008 7.3)",
+          "oklch(95% 0.008 7.3)"
+        ]
+      },
+      "p6-plum": {
+        "role": "primary",
+        "displayName": "P6 Deep Plum",
+        "proposal": "p6",
+        "canonical": "#3a1f33",
+        "oklch": "oklch(28.3% 0.052 337.2)",
+        "tonalRamp": [
+          "oklch(15% 0.052 337.2)",
+          "oklch(25% 0.052 337.2)",
+          "oklch(36% 0.052 337.2)",
+          "oklch(48% 0.052 337.2)",
+          "oklch(60% 0.052 337.2)",
+          "oklch(72% 0.052 337.2)",
+          "oklch(84% 0.052 337.2)",
+          "oklch(95% 0.04 337.2)"
+        ]
+      },
+      "p6-plum-soft": {
+        "role": "neutral",
+        "displayName": "P6 Soft Plum",
+        "proposal": "p6",
+        "canonical": "#6a4a60",
+        "oklch": "oklch(45.2% 0.054 338.6)",
+        "tonalRamp": [
+          "oklch(15% 0.054 338.6)",
+          "oklch(25% 0.054 338.6)",
+          "oklch(36% 0.054 338.6)",
+          "oklch(48% 0.054 338.6)",
+          "oklch(60% 0.054 338.6)",
+          "oklch(72% 0.054 338.6)",
+          "oklch(84% 0.054 338.6)",
+          "oklch(95% 0.04 338.6)"
+        ]
+      },
+      "p6-error": {
+        "role": "error",
+        "displayName": "P6 Alert Red",
+        "proposal": "p6",
+        "canonical": "#9c1636",
+        "oklch": "oklch(45% 0.166 15.1)",
+        "tonalRamp": [
+          "oklch(15% 0.166 15.1)",
+          "oklch(25% 0.166 15.1)",
+          "oklch(36% 0.166 15.1)",
+          "oklch(48% 0.166 15.1)",
+          "oklch(60% 0.166 15.1)",
+          "oklch(72% 0.166 15.1)",
+          "oklch(84% 0.166 15.1)",
+          "oklch(95% 0.04 15.1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "p1-display": {
+        "displayName": "P1 Display",
+        "purpose": "Hero h1 or hero claim only."
+      },
+      "p1-headline": {
+        "displayName": "P1 Headline",
+        "purpose": "Section h2."
+      },
+      "p1-body": {
+        "displayName": "P1 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p2-display": {
+        "displayName": "P2 Display",
+        "purpose": "Hero h1 or hero claim only."
+      },
+      "p2-headline": {
+        "displayName": "P2 Headline",
+        "purpose": "Section h2."
+      },
+      "p2-body": {
+        "displayName": "P2 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p3-display": {
+        "displayName": "P3 Display",
+        "purpose": "Hero h1 or hero claim only."
+      },
+      "p3-headline": {
+        "displayName": "P3 Headline",
+        "purpose": "Section h2."
+      },
+      "p3-body": {
+        "displayName": "P3 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p4-display": {
+        "displayName": "P4 Display",
+        "purpose": "Hero h1 or hero claim only."
+      },
+      "p4-headline": {
+        "displayName": "P4 Headline",
+        "purpose": "Section h2."
+      },
+      "p4-body": {
+        "displayName": "P4 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p5-display": {
+        "displayName": "P5 Display",
+        "purpose": "Right-column claim set on white caption highlights (desktop)."
+      },
+      "p5-headline": {
+        "displayName": "P5 Headline",
+        "purpose": "In-frame story h2; scales with viewport height."
+      },
+      "p5-body": {
+        "displayName": "P5 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p6-display": {
+        "displayName": "P6 Display",
+        "purpose": "Hero h1 or hero claim only."
+      },
+      "p6-headline": {
+        "displayName": "P6 Headline",
+        "purpose": "Section h2."
+      },
+      "p6-body": {
+        "displayName": "P6 Body",
+        "purpose": "Running text, 40-60ch measure."
+      },
+      "p1-title": {
+        "displayName": "P1 Title",
+        "purpose": "Card, tile, piece or row title."
+      },
+      "p2-title": {
+        "displayName": "P2 Title",
+        "purpose": "Card, tile, piece or row title."
+      },
+      "p3-title": {
+        "displayName": "P3 Title",
+        "purpose": "Card, tile, piece or row title."
+      },
+      "p4-title": {
+        "displayName": "P4 Title",
+        "purpose": "Card, tile, piece or row title."
+      },
+      "p6-title": {
+        "displayName": "P6 Title",
+        "purpose": "Card, tile, piece or row title."
+      },
+      "p5-label": {
+        "displayName": "P5 Label",
+        "purpose": "Highlight names and sticker meta."
+      }
+    },
+    "shadows": [
+      {
+        "name": "p1-palette-float",
+        "value": "0 8px 24px -12px rgba(43,37,48,.3)",
+        "purpose": "P1 only: floating palette chooser."
+      },
+      {
+        "name": "p3-pearl-orb",
+        "value": "inset -8px -10px 18px rgba(156,93,85,.12), inset 8px 8px 16px #fff",
+        "purpose": "P3 only: nacre orb modelling inside vitrine pieces."
+      },
+      {
+        "name": "p5-phone-lift",
+        "value": "0 18px 40px -24px rgba(42,34,49,.55)",
+        "purpose": "P5 only: the story viewer."
+      },
+      {
+        "name": "p5-sticker-lift",
+        "value": "0 6px 16px -12px rgba(42,34,49,.55)",
+        "purpose": "P5 only: stickers and the aside fact card."
+      },
+      {
+        "name": "p6-toggle-active",
+        "value": "0 2px 6px -3px rgba(58,31,51,.5)",
+        "purpose": "P6 only: pressed studio/home toggle thumb."
+      },
+      {
+        "name": "p6-dock",
+        "value": "0 10px 24px -14px rgba(58,31,51,.7)",
+        "purpose": "P6 only: fixed mobile booking dock."
+      }
+    ],
+    "motion": [
+      {
+        "name": "shared-state",
+        "value": "background-color .2s",
+        "purpose": "Button and slot hover in all worlds."
+      },
+      {
+        "name": "p1-lift",
+        "value": "transform .2s; translateY(-1px)",
+        "purpose": "P1 and P2 button hover lift."
+      },
+      {
+        "name": "p1-palette-repaint",
+        "value": "background-color .5s",
+        "purpose": "P1 surfaces repaint when the combo changes."
+      },
+      {
+        "name": "p1-sheen",
+        "value": "sheen 2.4s .6s cubic-bezier(.4,0,.2,1) forwards",
+        "purpose": "P1 one-shot light sweep across the hero photo."
+      },
+      {
+        "name": "p3-switch-thumb",
+        "value": "transform .45s cubic-bezier(.6,.05,.2,1)",
+        "purpose": "P3 studio/home switch thumb slide."
+      },
+      {
+        "name": "p3-msg-pop",
+        "value": "pop .35s ease-out (from opacity 0, translateY 6px)",
+        "purpose": "P3 concierge messages entering."
+      },
+      {
+        "name": "p3-glint",
+        "value": "glint 5s ease-in-out infinite",
+        "purpose": "P3 gem glint in the hero."
+      },
+      {
+        "name": "p5-frame-fade",
+        "value": "opacity .35s cubic-bezier(.2,.7,.2,1)",
+        "purpose": "P5 crossfade between story frames."
+      },
+      {
+        "name": "p5-auto-advance",
+        "value": "7000ms / 9000ms / 8000ms per data-auto frame; rAF elapsed timing",
+        "purpose": "P5 honest progress; pauses on pointerdown or focusin; starts paused under reduced motion."
+      },
+      {
+        "name": "shared-reduced-motion",
+        "value": "transition:none; animation:none; scroll-behavior:auto",
+        "purpose": "All worlds under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "p1-p4-nav-collapse",
+        "value": "860px"
+      },
+      {
+        "name": "p2-p5-p6-stack",
+        "value": "900px"
+      },
+      {
+        "name": "p3-nav-collapse",
+        "value": "720px"
+      },
+      {
+        "name": "p6-nav-collapse",
+        "value": "760px"
+      },
+      {
+        "name": "stepper-compact",
+        "value": "560px"
+      },
+      {
+        "name": "p1-bento-1col",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "P1 Primary Button",
+      "kind": "button",
+      "refersTo": "p1-button-primary",
+      "description": "P1 Pastel: ink pill, lifts 1px on hover.",
+      "html": "<button class=\"ds-p1-btn\">Reservar cita</button>",
+      "css": ".ds-p1-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:.85rem 1.6rem;border-radius:999px;font:600 1rem/1 \"Urbanist\",system-ui,sans-serif;border:0;cursor:pointer;background:#2b2530;color:#fff;transition:transform .2s,background-color .2s}.ds-p1-btn:hover{background:#40384a;transform:translateY(-1px)}.ds-p1-btn:focus-visible{outline:2px solid #2b2530;outline-offset:3px}"
+    },
+    {
+      "name": "P2 Champagne Button and Chips",
+      "kind": "chip",
+      "refersTo": "p2-chip",
+      "description": "P2 Atelier: situation chips on petrol; pressed turns champagne.",
+      "html": "<div class=\"ds-p2\"><button class=\"ds-p2-chip\" aria-pressed=\"true\">Embarazo</button><button class=\"ds-p2-chip\" aria-pressed=\"false\">Oficina</button><button class=\"ds-p2-btn\">Reservar</button></div>",
+      "css": ".ds-p2{display:flex;flex-wrap:wrap;gap:.5rem;padding:1.5rem;background:#10282c;font-family:\"Hanken Grotesk\",system-ui,sans-serif}.ds-p2-chip{border:1px solid rgba(245,240,234,.12);background:#163438;color:#f5f0ea;border-radius:999px;padding:.6rem 1.05rem;min-height:44px;font-size:.95rem;cursor:pointer}.ds-p2-chip:hover{border-color:rgba(245,240,234,.35)}.ds-p2-chip[aria-pressed=\"true\"]{background:#e2cda8;color:#10282c;border-color:#e2cda8}.ds-p2-btn{min-height:50px;padding:.85rem 1.5rem;border-radius:999px;border:0;background:#e2cda8;color:#10282c;font-weight:600;cursor:pointer;transition:background-color .2s,transform .2s}.ds-p2-btn:hover{background:#ecdcbe;transform:translateY(-1px)}.ds-p2 :focus-visible{outline:2px solid #e2cda8;outline-offset:3px}"
+    },
+    {
+      "name": "P3 Vitrine Piece",
+      "kind": "card",
+      "refersTo": "p3-piece",
+      "description": "P3 Joyero: arch-topped treatment piece with a pearl orb.",
+      "html": "<article class=\"ds-p3-piece\"><div class=\"ds-p3-orb\"></div><h3>Suelo pélvico</h3><p>Embarazo, posparto y diástasis.</p><div class=\"ds-p3-price\"><b>65 €</b><span>50 min</span></div><button class=\"ds-p3-btn\">Reservar</button></article>",
+      "css": ".ds-p3-piece{width:280px;background:#fff;border-radius:200px 200px 24px 24px;border:1px solid #dccfdd;padding:2.75rem 1.6rem 1.6rem;display:flex;flex-direction:column;text-align:center;color:#2d2033;font-family:\"Figtree\",system-ui,sans-serif}.ds-p3-orb{width:96px;height:96px;margin:0 auto 1.25rem;border-radius:50%;background:linear-gradient(135deg,#fdf8fb 0%,#ece2f0 30%,#f6ebe4 55%,#e4ecf3 80%,#fbf5f9 100%);box-shadow:inset -8px -10px 18px rgba(156,93,85,.12),inset 8px 8px 16px #fff}.ds-p3-piece h3{font:400 1.7rem/1.1 \"Italiana\",Georgia,serif;margin:0 0 .6rem}.ds-p3-piece p{color:#5e4c66;font-size:.96rem;margin:0}.ds-p3-price{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid #dccfdd;display:flex;justify-content:space-between;align-items:baseline}.ds-p3-price b{font:400 2rem/1 \"Italiana\",Georgia,serif}.ds-p3-price span{font-size:.88rem;color:#5e4c66}.ds-p3-btn{margin-top:1rem;min-height:48px;border-radius:999px;border:0;background:#2d2033;color:#f8f2f6;font-weight:500;cursor:pointer}.ds-p3-btn:hover{background:#43314b}.ds-p3-btn:focus-visible{outline:2px solid #9c5d55;outline-offset:3px}"
+    },
+    {
+      "name": "P4 Specialty Tile",
+      "kind": "card",
+      "refersTo": "p4-specialty-tile",
+      "description": "P4 Baldosa: square 1:1 pigment tile laid in 2px grout, rosette quarter off the corner.",
+      "html": "<div class=\"ds-p4-tiles\"><article class=\"ds-p4-spec\"><svg class=\"ds-p4-corner\" viewBox=\"0 0 120 120\"><rect width=\"120\" height=\"120\" fill=\"#fcfcfa\"/><path fill=\"#efc3c6\" d=\"M60 0a60 60 0 0 0 60 60V0zM60 120A60 60 0 0 0 0 60v60z\"/><circle fill=\"#bfdcd3\" cx=\"60\" cy=\"60\" r=\"16\"/></svg><h3>Suelo pélvico</h3><p>Embarazo, posparto, diástasis.</p><div class=\"ds-p4-foot\"><span>65 €</span><a href=\"#\">Reservar</a></div></article></div>",
+      "css": ".ds-p4-tiles{display:grid;grid-template-columns:260px;gap:2px;background:#efefea;padding:2px;outline:1.5px solid #2b2a36;font-family:\"Figtree\",system-ui,sans-serif;color:#2b2a36}.ds-p4-spec{position:relative;aspect-ratio:1;padding:1.5rem;display:flex;flex-direction:column;background:#efc3c6;overflow:hidden}.ds-p4-corner{position:absolute;width:42%;right:-12%;top:-12%;opacity:.9}.ds-p4-spec h3{font:700 2rem/1 \"Bricolage Grotesque\",system-ui,sans-serif;font-stretch:78%;letter-spacing:-.02em;max-width:9ch;margin:0;position:relative}.ds-p4-spec p{margin:.75rem 0 0;font-size:.97rem;position:relative}.ds-p4-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;position:relative}.ds-p4-foot span{font-weight:600}.ds-p4-foot a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;background:#fcfcfa;text-decoration:none;font-weight:600;font-size:.92rem;color:#2b2a36}.ds-p4-foot a:hover{background:#2b2a36;color:#fcfcfa}.ds-p4-foot a:focus-visible{outline:2px solid #2b2a36;outline-offset:3px}"
+    },
+    {
+      "name": "P4 Slots (dashed unchosen, solid chosen)",
+      "kind": "chip",
+      "refersTo": "p4-slot",
+      "description": "P4 Baldosa: available dashed, chosen solid ink, busy struck through.",
+      "html": "<div class=\"ds-p4-slots\"><button class=\"ds-p4-slot\">10:00</button><button class=\"ds-p4-slot\" aria-pressed=\"true\">11:00</button><button class=\"ds-p4-slot\" disabled>12:00</button><button class=\"ds-p4-btn\">Siguiente</button></div>",
+      "css": ".ds-p4-slots{display:flex;flex-wrap:wrap;gap:.5rem;padding:1.25rem;background:#fcfcfa;font-family:\"Figtree\",system-ui,sans-serif;color:#2b2a36}.ds-p4-slot{border:1.5px dashed #2b2a36;background:#fcfcfa;border-radius:999px;padding:.55rem 1.1rem;min-height:44px;font-weight:600;cursor:pointer}.ds-p4-slot[aria-pressed=\"true\"]{border-style:solid;background:#2b2a36;color:#fcfcfa}.ds-p4-slot:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}.ds-p4-btn{min-height:48px;padding:.8rem 1.5rem;border-radius:999px;border:0;background:#2b2a36;color:#fcfcfa;font-weight:600;cursor:pointer;transition:background-color .2s}.ds-p4-btn:hover{background:#45434f}.ds-p4-slots :focus-visible{outline:2px solid #2b2a36;outline-offset:3px}"
+    },
+    {
+      "name": "P5 Highlight Rings",
+      "kind": "nav",
+      "refersTo": "p5-sticker",
+      "description": "P5 Stories: highlight rings as navigation; conic ring only on current or hover.",
+      "html": "<nav class=\"ds-p5-hl\"><button aria-current=\"true\"><i><b style=\"background:#f3bfcb\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6\"/></svg></b></i><span>Hola</span></button><button><i><b style=\"background:#cdbdf0\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 6h14M5 12h14M5 18h9\"/></svg></b></i><span>Tratamientos</span></button><button><i><b style=\"background:#f7cfb4\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 11 12 4l8 7v9H4z\"/><path d=\"M10 20v-5h4v5\"/></svg></b></i><span>Domicilio</span></button></nav>",
+      "css": ".ds-p5-hl{display:flex;gap:1rem;padding:1rem;background:#f6e4e7;font-family:\"Hanken Grotesk\",system-ui,sans-serif;color:#2a2231}.ds-p5-hl button{display:flex;flex-direction:column;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;min-width:76px;padding:0;color:inherit}.ds-p5-hl i{width:68px;height:68px;border-radius:50%;padding:2.5px;background:#d9c3c9;display:block}.ds-p5-hl button[aria-current=\"true\"] i,.ds-p5-hl button:hover i{background:conic-gradient(from 210deg,#f3bfcb,#cdbdf0,#f7cfb4,#f3bfcb)}.ds-p5-hl b{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;border:3px solid #f6e4e7;box-sizing:border-box}.ds-p5-hl svg{width:28px;height:28px;stroke:#2a2231;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.ds-p5-hl span{font-size:.85rem;font-weight:500}.ds-p5-hl button:focus-visible{outline:2px solid #2a2231;outline-offset:3px}"
+    },
+    {
+      "name": "P5 Slot Sticker and Reply Bar",
+      "kind": "custom",
+      "refersTo": "p5-reply-send",
+      "description": "P5 Stories: tilted next-slot sticker and the reply bar that becomes the WhatsApp message.",
+      "html": "<div class=\"ds-p5-frame\"><div class=\"ds-p5-sticker\"><div><small>Próxima hora libre</small><b>Martes 11:00</b></div><button class=\"ds-p5-btn\">Reservar</button></div><div class=\"ds-p5-reply\"><textarea aria-label=\"Mensaje\">Hola Gala, quiero reservar…</textarea><button aria-label=\"Enviar por WhatsApp\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 12 20 4l-6 16-3-7z\"/></svg></button></div></div>",
+      "css": ".ds-p5-frame{width:300px;padding:18px;border-radius:28px;background:linear-gradient(180deg,#f3bfcb 0%,#f7cfb4 100%);display:flex;flex-direction:column;gap:1.25rem;font-family:\"Hanken Grotesk\",system-ui,sans-serif;color:#2a2231;box-shadow:0 18px 40px -24px rgba(42,34,49,.55)}.ds-p5-sticker{background:#fffafb;border-radius:18px;padding:.85rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem;transform:rotate(-1.5deg);box-shadow:0 6px 16px -12px rgba(42,34,49,.55)}.ds-p5-sticker small{display:block;color:#5a4c5e;font-size:.82rem}.ds-p5-sticker b{font-weight:800}.ds-p5-btn{min-height:44px;padding:.55rem 1rem;border-radius:999px;border:0;background:#2a2231;color:#fffafb;font:600 .92rem/1 inherit;cursor:pointer}.ds-p5-btn:hover{background:#43384b}.ds-p5-reply{display:flex;gap:.45rem;align-items:center}.ds-p5-reply textarea{flex:1;min-width:0;height:48px;padding:.45rem .9rem;border-radius:18px;border:1.5px solid rgba(42,34,49,.55);background:rgba(255,250,251,.9);font:inherit;font-size:.88rem;line-height:1.3;resize:none}.ds-p5-reply button{width:48px;height:48px;border-radius:50%;border:0;background:#2a2231;display:grid;place-items:center;cursor:pointer;flex:none}.ds-p5-reply svg{width:20px;height:20px;stroke:#fffafb;fill:none;stroke-width:2;stroke-linejoin:round}.ds-p5-frame :focus-visible{outline:2px solid #2a2231;outline-offset:3px}"
+    },
+    {
+      "name": "P6 Seal with Toggle and Slots",
+      "kind": "custom",
+      "refersTo": "p6-slot",
+      "description": "P6 Prospecto: perforated paper seal holding the studio/home toggle and slots.",
+      "html": "<section class=\"ds-p6-seal\"><h2>Reserva tu hora</h2><div class=\"ds-p6-toggle\"><button aria-pressed=\"true\">Estudio</button><button aria-pressed=\"false\">A domicilio</button></div><div class=\"ds-p6-slots\"><button class=\"ds-p6-slot\"><b>Martes 3</b><span>10:00</span></button><button class=\"ds-p6-slot\" aria-pressed=\"true\"><b>Miércoles 4</b><span>17:00</span></button></div><button class=\"ds-p6-btn\">Reservar mi hora</button></section>",
+      "css": ".ds-p6-seal{width:340px;background:#fff8f9;border-radius:6px;padding:2.2rem 1.6rem 1.6rem;position:relative;color:#3a1f33;font-family:\"Figtree\",system-ui,sans-serif;-webkit-mask:radial-gradient(circle 5px at 50% 0,#0000 98%,#000) 50% 0/14px 100% repeat-x;mask:radial-gradient(circle 5px at 50% 0,#0000 98%,#000) 50% 0/14px 100% repeat-x}.ds-p6-seal::after{content:\"\";position:absolute;left:0;right:0;top:12px;border-top:1.5px dashed rgba(58,31,51,.35)}.ds-p6-seal h2{font:400 2rem/1.05 \"Gilda Display\",Georgia,serif;margin:0}.ds-p6-toggle{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:999px;background:#e7a9b6;margin:1.25rem 0 1rem}.ds-p6-toggle button{border:0;border-radius:999px;min-height:46px;background:transparent;cursor:pointer;font-weight:600;color:inherit}.ds-p6-toggle button[aria-pressed=\"true\"]{background:#fff8f9;box-shadow:0 2px 6px -3px rgba(58,31,51,.5)}.ds-p6-slots{display:grid;gap:.5rem}.ds-p6-slot{display:flex;justify-content:space-between;align-items:center;min-height:54px;padding:.6rem 1.1rem;border-radius:16px;border:0;background:#f2c6cf;cursor:pointer;color:inherit;font:inherit}.ds-p6-slot b{font-weight:600}.ds-p6-slot span{font-size:.9rem}.ds-p6-slot:hover{background:#e7a9b6}.ds-p6-slot[aria-pressed=\"true\"]{background:#3a1f33;color:#fff8f9}.ds-p6-btn{width:100%;margin-top:1rem;min-height:52px;border-radius:999px;border:0;background:#3a1f33;color:#fff8f9;font-weight:600;cursor:pointer;transition:background-color .2s}.ds-p6-btn:hover{background:#563049}.ds-p6-seal :focus-visible{outline:2px solid #3a1f33;outline-offset:3px}"
+    },
+    {
+      "name": "P6 Leaflet Rows",
+      "kind": "custom",
+      "refersTo": "p6-title",
+      "description": "P6 Prospecto: ruled INCI-style rows; numerals only for the real sequence of a session.",
+      "html": "<ol class=\"ds-p6-rows\"><li><em>1</em><b>Escucha y valoración</b><span>10 min</span><p>Me cuentas qué te pasa y te explico qué ocurre.</p></li><li><em>2</em><b>Tratamiento manual</b><span>30 min</span><p>Terapia manual, miofascial, drenaje o punción seca.</p></li></ol>",
+      "css": ".ds-p6-rows{list-style:none;padding:0;margin:0;width:520px;border-top:1.5px solid #3a1f33;background:#fff8f9;color:#3a1f33;font-family:\"Figtree\",system-ui,sans-serif}.ds-p6-rows li{display:grid;grid-template-columns:3rem minmax(0,1fr) auto;gap:.3rem 1.5rem;padding:1.15rem 0;border-bottom:1px solid rgba(58,31,51,.18)}.ds-p6-rows em{font:400 1.6rem/1 \"Gilda Display\",Georgia,serif;font-style:normal;color:#6a4a60}.ds-p6-rows b{font:400 1.45rem/1.15 \"Gilda Display\",Georgia,serif}.ds-p6-rows span{font-weight:600;white-space:nowrap}.ds-p6-rows p{grid-column:2/-1;color:#6a4a60;margin:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "One person, six rooms",
+    "overview": "Every proposal sells the same person and the same booking flow, each in its own room. The shared floor is product, not style: who Gala is, what she treats, studio or home as a first-class choice, prices in plain view, and a booking that is never more than one tap away. Everything visual sits inside one proposal.\n\nThe six rooms, as built:\n\n- **P1 Pastel** (`propuesta-1/`): an airy light page in a single light-weight geometric sans (Urbanist 300). It has a soft bento of rounded tiles, three switchable three-colour pastel combos, and a 4-step booking card set on a pastel gradient.\n- **P2 Atelier** (`propuesta-2/`): a deep petrol night page with ivory text and champagne actions. It uses a Gloock serif display over Hanken Grotesk, an interactive body map in the hero, a postcode checker, booking that composes a WhatsApp message, and a fixed tab bar on mobile.\n- **P3 Joyero** (`propuesta-3/`): pearl and plum jewellery-case cases. It sets Italiana display over Figtree and uses arch-topped \"pieces\" in a horizontal vitrine, a sliding studio/home switch that rewrites the page, and a concierge chat for booking.\n- **P4 Baldosa** (`propuesta-4/`): the floor of an Eixample flat. Encaustic tiles in three pigments sit on lime-white grout, the layout is counted in whole tiles, corners are square, and only the controls are pills. Bricolage Grotesque runs condensed over Figtree.\n- **P5 Stories** (`propuesta-5/`): the site as tap-through vertical story frames inside a phone-proportion viewer. It has highlight rings as navigation, a reply bar on every frame that becomes the WhatsApp message, and Hanken Grotesk 800 throughout.\n- **P6 Prospecto** (`propuesta-6/`): the landing page as a printed skincare box and its leaflet. One powder pink is the ground, the ink is deep plum, Gilda Display is set flat, the box has dashed creases and a perforated seal that holds the booking, and the leaflet carries ruled INCI-style lists.",
+    "keyCharacteristics": [
+      "Six self-contained worlds, each in one HTML file with its tokens declared in `:root`.",
+      "Every world pairs a pastel or soft ground with one deep ink, and that ink carries the primary action.",
+      "Every world uses pill buttons (999px) with a minimum height of 44 to 52px.",
+      "Booking is a demo in all six, and placeholder data is labelled in the page."
+    ],
+    "rules": [
+      {
+        "name": "The Proposal Prefix Rule",
+        "body": "A token belongs to one world. A P4 pigment never appears in P6, and the shared floor owns no colour except the error red.",
+        "section": "colors",
+        "scope": "all"
+      },
+      {
+        "name": "The Live Combo Rule",
+        "body": "Pastel fills reference the switchable variables (`--c1..c3`, `--t1..t3`), never literal hexes, so the palette chooser repaints the whole page, including the SVG tile fills.",
+        "section": "colors",
+        "scope": "P1, P4"
+      },
+      {
+        "name": "The One Hue Rule",
+        "body": "The ground is one pink at full strength. Depth comes from its deeper step and from paper, never from a second hue.",
+        "section": "colors",
+        "scope": "P6"
+      },
+      {
+        "name": "The Champagne Is Action Rule",
+        "body": "On petrol, champagne means \"you can press this\". It is not decoration.",
+        "section": "colors",
+        "scope": "P2"
+      },
+      {
+        "name": "The Light Display Rule",
+        "body": "Display stays at weight 300/400. Hierarchy comes from size and negative tracking, never from bold.",
+        "section": "typography",
+        "scope": "P1, P3"
+      },
+      {
+        "name": "The Condensed Stretch Rule",
+        "body": "Every Bricolage heading sets `font-stretch` between 75% and 85%. The display face is never set at its default width.",
+        "section": "typography",
+        "scope": "P4"
+      },
+      {
+        "name": "The Caption Highlight Rule",
+        "body": "The right-column claim sits on white highlight boxes (`box-decoration-break: clone`, 0.18em radius), which is the story text mode. It appears only in that column.",
+        "section": "typography",
+        "scope": "P5"
+      },
+      {
+        "name": "The Flat Floor Rule",
+        "body": "Tiles never cast shadows. A tile is a coloured plane laid in grout.",
+        "section": "elevation",
+        "scope": "P4"
+      },
+      {
+        "name": "The Sticker Lift Rule",
+        "body": "Only objects that sit on top of a story (the viewer, stickers, the fact card) get a shadow, and it is always the same short, negative-spread ink shadow.",
+        "section": "elevation",
+        "scope": "P5"
+      }
+    ],
+    "dos": [
+      "**Do** take every value from the chosen proposal's own `p*-` tokens and nothing from a sibling.",
+      "**Do** keep booking one tap away: a header pill, the hero slots (P1, P4, P5, P6), a mobile dock or tab bar (P2, P6), and the reply bar (P5).",
+      "**Do** keep studio and home as two equal options in every booking control.",
+      "**Do** label every placeholder value \"dato de ejemplo\" and every photo slot \"pendiente\".",
+      "**Do** in P4 size and space in tile fractions of `--tile`, with 2px grout between tiles.",
+      "**Do** in P4 mark an available option with a dashed 1.5px ink border and the chosen one with a solid border.",
+      "**Do** in P6 draw folds only as 1px dashed creases at 40% plum.",
+      "**Do** in P6 number list rows only when they are a real sequence (the three phases of a session).",
+      "**Do** in P5 keep auto-advance pausable, pause it on interaction, and keep each frame addressable by hash."
+    ],
+    "donts": [
+      "**Don't** mix fonts or pigments between proposals, and don't add a second hue to P6's ground.",
+      "**Don't** add shadows to P4 tiles or P2 surfaces. Shadows exist only where listed in Elevation & Depth.",
+      "**Don't** round P4's tiles, fields or panels. Only pill controls are round there.",
+      "**Don't** use the looks the client rejected: 2005-era magazine (oxblood, gold and Bodoni) and holographic night glam.",
+      "**Don't** add testimonials, review stars, patient counts or press logos. None exist.",
+      "**Don't** add eyebrow or kicker labels above headings, glyph icons, or gradient-filled text. See the not-canonized note below."
+    ],
+    "notCanonized": [
+      "P1: hero eyebrow pill (.where-line) with a \"✦\" text glyph — kicker plus glyph icon.",
+      "P3: unused gradient-text utility (.rg) — dead CSS."
+    ]
+  }
+}

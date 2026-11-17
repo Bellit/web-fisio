@@ -1,0 +1,16 @@
+# Herramientas locales (servidor de vista previa, ajustes del editor)
+.claude/
+
+# Caché local del detector de diseño (rutas del equipo e IDs de sesión)
+.impeccable/hook.cache.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secretos, por si acaso
+.env
+.env.*
+*.pem
+*.key

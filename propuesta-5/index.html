@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gala Ferrer, fisioterapeuta en Barcelona | Stories</title>
+<meta name="description" content="Conoce a Gala Ferrer, fisioterapeuta en Barcelona, en seis historias: quién es, qué trata, dónde atiende y cómo reservar por WhatsApp. Estudio o domicilio.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f6e4e7">
+<meta property="og:title" content="Gala Ferrer, fisioterapeuta en Barcelona">
+<meta property="og:description" content="Seis historias para conocerla y reservar por WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#f6e4e7;
+  --ground-2:#efd6db;
+  --ink:#2a2231;
+  --ink-soft:#5a4c5e;
+  --white:#fffafb;
+  --powder:#f3bfcb;
+  --lilac:#cdbdf0;
+  --peach:#f7cfb4;
+  --sage:#cfe3d4;
+  --ring:#2a2231;
+  --bezel:#241d29;
+  --font:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font:400 1.0625rem/1.55 var(--font);-webkit-font-smoothing:antialiased;min-height:100vh}
+::selection{background:var(--lilac)}
+a{color:inherit;text-underline-offset:.2em}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.75rem 1rem;z-index:99}
+.skip:focus{left:1rem;top:1rem}
+.wrap{width:min(1180px,100% - 2rem);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Perfil */
+.profile{display:flex;align-items:center;gap:1rem;padding:1.25rem 0 1rem}
+.avatar{width:64px;height:64px;border-radius:50%;padding:3px;background:var(--ring);flex:none}
+.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--ink);color:var(--white);font:800 1.4rem/1 var(--font);border:3px solid var(--ground)}
+.profile h1{font:800 1.35rem/1.1 var(--font);letter-spacing:-.02em}
+.profile p{color:var(--ink-soft);font-size:.95rem}
+.profile .btn{margin-left:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.4rem;border-radius:999px;font:600 1rem/1 var(--font);text-decoration:none;border:0;cursor:pointer;background:var(--ink);color:var(--white)}
+.btn:hover{background:#43384b}
+.btn-soft{background:var(--white);color:var(--ink)}
+.btn-soft:hover{background:#fff}
+
+/* Destacados */
+.highlights{display:flex;gap:1rem;overflow-x:auto;padding:.25rem 0 1rem;list-style:none;scrollbar-width:none}
+.highlights::-webkit-scrollbar{display:none}
+.hl{display:flex;flex-direction:column;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;min-width:76px;padding:0}
+.hl i{width:68px;height:68px;border-radius:50%;padding:2.5px;background:#d9c3c9;display:block}
+.hl[aria-current="true"] i,.hl:hover i{background:var(--ring)}
+.hl i b{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;border:3px solid var(--ground)}
+.hl i svg{width:28px;height:28px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hl span{font-size:.85rem;font-weight:500}
+.hl:nth-child(1) i b{background:var(--powder)}.hl:nth-child(2) i b{background:var(--lilac)}.hl:nth-child(3) i b{background:var(--peach)}.hl:nth-child(4) i b{background:var(--sage)}.hl:nth-child(5) i b{background:var(--powder)}.hl:nth-child(6) i b{background:var(--white)}
+
+/* Escenario */
+.stage{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start;padding-bottom:4rem}
+.viewer{--top:40px;position:relative;width:calc(clamp(600px,100vh - 230px,780px) * 9 / 16);aspect-ratio:9/16;border-radius:46px;overflow:hidden;background:var(--white);border:10px solid var(--bezel);box-shadow:0 0 0 1.5px #4a3f50,0 30px 60px -30px rgba(42,34,49,.7);perspective:1400px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.viewer::after{content:"";position:absolute;top:9px;left:50%;width:96px;height:26px;margin-left:-48px;border-radius:20px;background:var(--bezel);z-index:9;pointer-events:none}
+.bars{position:absolute;top:calc(var(--top) + 2px);left:12px;right:12px;display:flex;gap:4px;z-index:5}
+.bars span{flex:1;height:3px;border-radius:3px;background:rgba(42,34,49,.18);overflow:hidden}
+.bars span i{display:block;height:100%;width:0;background:var(--ink)}
+.bars span.seen i{width:100%}
+.ctrl{position:absolute;top:calc(var(--top) + 14px);right:12px;z-index:6;display:flex;gap:.25rem}
+.ctrl button{width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,250,251,.75);display:grid;place-items:center;cursor:pointer}
+.ctrl svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round}
+.who{position:absolute;top:calc(var(--top) + 18px);left:14px;z-index:5;display:flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600}
+.who i{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--white);display:grid;place-items:center;font-style:normal;font-size:.8rem}
+.who small{color:var(--ink-soft);font-weight:500}
+.frame{position:absolute;inset:0;padding:calc(var(--top) + 74px) 18px calc(var(--rh,72px) + 26px);display:flex;flex-direction:column;visibility:hidden;backface-visibility:hidden;border-radius:36px}
+.frame.on,.frame.out{visibility:visible}
+.frame.out{z-index:1}
+/* Cubo entre historias */
+.frame.in-n{animation:cubeInN .6s cubic-bezier(.45,.05,.25,1) both}
+.frame.out-n{animation:cubeOutN .6s cubic-bezier(.45,.05,.25,1) both}
+.frame.in-p{animation:cubeInP .6s cubic-bezier(.45,.05,.25,1) both}
+.frame.out-p{animation:cubeOutP .6s cubic-bezier(.45,.05,.25,1) both}
+@keyframes cubeInN{from{transform:translateZ(calc(var(--hw) * -1)) rotateY(90deg) translateZ(var(--hw));filter:brightness(.7)}to{transform:translateZ(calc(var(--hw) * -1)) rotateY(0) translateZ(var(--hw))}}
+@keyframes cubeOutN{from{transform:translateZ(calc(var(--hw) * -1)) rotateY(0) translateZ(var(--hw))}to{transform:translateZ(calc(var(--hw) * -1)) rotateY(-90deg) translateZ(var(--hw));filter:brightness(.7)}}
+@keyframes cubeInP{from{transform:translateZ(calc(var(--hw) * -1)) rotateY(-90deg) translateZ(var(--hw));filter:brightness(.7)}to{transform:translateZ(calc(var(--hw) * -1)) rotateY(0) translateZ(var(--hw))}}
+@keyframes cubeOutP{from{transform:translateZ(calc(var(--hw) * -1)) rotateY(0) translateZ(var(--hw))}to{transform:translateZ(calc(var(--hw) * -1)) rotateY(90deg) translateZ(var(--hw));filter:brightness(.7)}}
+/* Entrada del contenido de cada historia */
+.frame.on > *{animation:rise .65s cubic-bezier(.2,.7,.2,1) backwards}
+.frame.on > :nth-child(2){animation-delay:.1s}
+.frame.on > :nth-child(3){animation-delay:.2s}
+.frame.on > :nth-child(4){animation-delay:.3s}
+.frame.on > :nth-child(5){animation-delay:.38s}
+.frame.on > :nth-child(6){animation-delay:.46s}
+.frame.on > :nth-child(n+7){animation-delay:.54s}
+.frame.on.in-n > *,.frame.on.in-p > *{animation-delay:.45s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+/* Corazón de doble toque */
+.burst{position:absolute;z-index:8;width:96px;height:96px;margin:-48px 0 0 -48px;pointer-events:none;animation:burst .9s cubic-bezier(.2,.7,.2,1) forwards}
+.burst svg{width:100%;height:100%;fill:#e0475f}
+@keyframes burst{0%{transform:scale(.2) rotate(-12deg);opacity:0}25%{transform:scale(1.15) rotate(6deg);opacity:1}45%{transform:scale(.95) rotate(0)}80%{opacity:1}100%{transform:scale(1) translateY(-60px);opacity:0}}
+.frame h2{font:800 clamp(1.7rem,3.4vh,2.2rem)/1.02 var(--font);letter-spacing:-.035em;max-width:13ch}
+.frame p{color:var(--ink-soft)}
+.f1{background:var(--powder)}
+.f2{background:var(--lilac)}
+.f3{background:var(--peach)}
+.f4{background:var(--sage)}
+.f5{background:var(--powder)}
+.f6{background:var(--white)}
+.f1 .photo{flex:1;border-radius:20px;margin:.5rem 0 1rem;background:rgba(255,250,251,.35);position:relative;overflow:hidden}
+.f1 .photo svg{position:absolute;inset:auto 0 0;width:100%}
+.f1 .photo small{position:absolute;top:.75rem;left:.75rem;background:var(--white);padding:.25rem .65rem;border-radius:999px;font-size:.78rem;font-weight:600}
+.sticker{background:var(--white);border-radius:18px;padding:.85rem 1rem;box-shadow:0 6px 16px -12px rgba(42,34,49,.55)}
+.sticker b{display:block;font-weight:800}
+.sticker.slot{display:flex;align-items:center;justify-content:space-between;gap:.75rem;transform:rotate(-1.5deg)}
+.sticker.slot small{display:block;color:var(--ink-soft);font-size:.82rem}
+.sticker.slot .btn{min-height:44px;padding:.55rem 1rem;font-size:.92rem}
+.count{display:flex;gap:.3rem;margin-top:.35rem}
+.count span{background:var(--ink);color:var(--white);border-radius:8px;padding:.2rem .4rem;font:800 1.05rem/1 var(--font);font-variant-numeric:tabular-nums;min-width:2.3em;text-align:center}
+.sticker.slot .count span small{display:block;font:500 .62rem/1.2 var(--font);color:#d9cfdc;margin-top:.1rem}
+/* Deslizador de molestia */
+.pain{margin-top:.7rem;padding-top:.7rem;border-top:1px solid #eadfe3}
+.pain label{font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center}
+.pain output{font-size:1.4rem;line-height:1}
+.pain input{width:100%;margin-top:.4rem;accent-color:var(--ink);height:28px}
+.pain .scale{display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink-soft)}
+.pain p{font-size:.84rem;margin-top:.35rem;color:var(--ink)}
+
+/* Mapa del cuerpo dentro de la historia */
+.f2 .bodywrap{display:grid;grid-template-columns:96px minmax(0,1fr);gap:.9rem;margin-top:1rem;flex:1;align-items:start}
+.bodymap{position:relative;aspect-ratio:200/440}
+.bodymap svg{width:100%;height:100%}
+.spot{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;border-radius:50%}
+.spot::before{content:"";width:13px;height:13px;border-radius:50%;background:var(--white);border:2px solid var(--ink);transition:transform .2s}
+.spot[aria-pressed="true"]::before{background:var(--ink);transform:scale(1.3)}
+.f2{overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.f2 .answer{font-size:.88rem;line-height:1.4}
+.f2 .answer .rec{display:block;font-weight:700;margin-top:.35rem}
+.f2 .answer b{font-size:1rem}
+.f2 .answer .btn{margin-top:.75rem;min-height:44px;font-size:.9rem;padding:.55rem 1rem}
+
+.list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.45rem;margin-top:1rem;overflow:auto}
+.list li{display:flex;justify-content:space-between;gap:.75rem;align-items:center;background:var(--white);border-radius:14px;padding:.6rem .85rem;font-size:.95rem}
+.list li span{font-weight:600}
+.list li button{border:0;background:var(--ink);color:var(--white);border-radius:999px;min-height:44px;padding:0 .9rem;cursor:pointer;font-size:.85rem;font-weight:600;flex:none}
+
+.cp{margin-top:1.25rem}
+.cp label{font-weight:600;display:block;margin-bottom:.4rem}
+.cp .row{display:flex;gap:.4rem}
+.cp input{flex:1;min-width:0;padding:.65rem .9rem;border-radius:12px;border:1.5px solid var(--ink);background:var(--white);font-weight:600;letter-spacing:.08em;min-height:48px}
+.cp .result{margin-top:.75rem;font-size:.95rem}
+.facts{display:grid;gap:.45rem;margin-top:1rem}
+.facts div{background:var(--white);border-radius:14px;padding:.6rem .85rem}
+.facts dt{font-size:.8rem;color:var(--ink-soft)}
+.facts dd{font-weight:600}
+
+.poll{margin-top:.7rem}
+.poll p{font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
+.poll .opts{display:flex;flex-wrap:wrap;gap:.3rem}
+.opt{border:1.5px solid var(--ink);background:transparent;border-radius:999px;padding:.35rem .75rem;cursor:pointer;font-size:.85rem;font-weight:500;min-height:36px}
+.opt[aria-pressed="true"]{background:var(--ink);color:var(--white)}
+.f6{overflow:auto;scrollbar-width:thin;scrollbar-color:var(--lilac) transparent}
+.f6 h2{font-size:1.45rem}
+.f6 .poll{margin-top:.55rem}
+.f6 .opt{min-height:34px;padding:.3rem .65rem;font-size:.82rem}
+
+/* Barra de respuesta */
+.reply{position:absolute;left:12px;right:12px;bottom:12px;z-index:5;display:flex;gap:.45rem;align-items:center}
+.reply textarea{flex:1;min-width:0;height:48px;max-height:120px;scrollbar-width:thin;scrollbar-color:var(--lilac) transparent;padding:.45rem .9rem;border-radius:18px;border:1.5px solid rgba(42,34,49,.55);background:rgba(255,250,251,.9);font:inherit;font-size:.88rem;line-height:1.3;resize:none}
+.reply button{width:48px;height:48px;border-radius:50%;border:0;background:var(--ink);display:grid;place-items:center;cursor:pointer;flex:none}
+.reply svg{width:20px;height:20px;stroke:var(--white);fill:none;stroke-width:2;stroke-linejoin:round}
+.reply .like{background:rgba(255,250,251,.9);border:1.5px solid rgba(42,34,49,.55)}
+.reply .like svg{stroke:var(--ink);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.reply .like[aria-pressed="true"] svg{fill:#e0475f;stroke:#e0475f;transform:scale(1.12)}
+.tap{position:absolute;top:calc(var(--top) + 60px);bottom:80px;width:22%;z-index:4;border:0;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tap.prev{left:0}.tap.next{right:0}
+
+/* Columna fija */
+.aside h2{font:800 clamp(2.4rem,4.6vw,4rem)/1.12 var(--font);letter-spacing:-.04em;max-width:13ch}
+.aside h2 span{background:var(--white);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .22em;border-radius:.18em}
+.aside .lead{color:var(--ink-soft);font-size:1.15rem;max-width:42ch;margin-top:1.25rem}
+.aside .cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem}
+.aside dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.6rem 1.25rem;margin-top:2.5rem;padding:1.25rem 1.4rem;background:var(--white);border-radius:18px;max-width:520px;transform:rotate(-1deg);box-shadow:0 6px 16px -12px rgba(42,34,49,.55)}
+.aside dt{color:var(--ink-soft)}
+.aside dd{font-weight:500}
+.hint{font-size:.9rem;color:var(--ink-soft);margin-top:1.25rem}
+
+footer{padding:2rem 0 3rem;border-top:1.5px solid rgba(42,34,49,.12);color:var(--ink-soft);font-size:.92rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+.foot nav{display:flex;flex-wrap:wrap;gap:1.2rem}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline;color:var(--ink)}
+
+@media (max-width:900px){
+  .stage{grid-template-columns:minmax(0,1fr)}
+  .viewer{--top:0px;width:100%;max-width:440px;margin-inline:auto;height:min(calc(100svh - 120px),calc(min(100vw - 2rem,440px) * 16 / 9));aspect-ratio:auto;border:0;border-radius:24px;box-shadow:0 18px 40px -24px rgba(42,34,49,.55)}
+  .viewer::after{display:none}
+  .frame{border-radius:0;padding-top:84px}
+  .bars{top:12px}.ctrl{top:24px}.who{top:28px}.tap{top:70px}
+  .profile{padding:.75rem 0 0}
+  .profile .avatar,.profile p,.profile .btn{display:none}
+  .profile h1{font-size:1.15rem}
+  .highlights{padding-top:.75rem}
+  .hl i{width:56px;height:56px}
+  .hl{min-width:64px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#historias">Saltar a las historias</a>
+
+<header class="wrap">
+  <div class="profile">
+    <div class="avatar" aria-hidden="true"><span>G</span></div>
+    <div>
+      <h1>Gala Ferrer</h1>
+      <p>Fisioterapeuta en Barcelona, en estudio y a domicilio</p>
+    </div>
+    <a class="btn" href="#s6" data-go="5">Reservar</a>
+  </div>
+  <nav aria-label="Historias destacadas">
+    <ul class="highlights" id="highlights">
+      <li><button class="hl" data-go="0"><i><b><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></b></i><span>Hola</span></button></li>
+      <li><button class="hl" data-go="1"><i><b><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v7m-5-5h10M9 21l3-6 3 6"/></svg></b></i><span>Tu zona</span></button></li>
+      <li><button class="hl" data-go="2"><i><b><svg viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h9"/></svg></b></i><span>Tratamientos</span></button></li>
+      <li><button class="hl" data-go="3"><i><b><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-5h4v5"/></svg></b></i><span>Domicilio</span></button></li>
+      <li><button class="hl" data-go="4"><i><b><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></b></i><span>Estudio</span></button></li>
+      <li><button class="hl" data-go="5"><i><b><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4m8-4v4M4 10h16"/></svg></b></i><span>Reservar</span></button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap stage" id="main">
+  <section class="viewer" id="historias" aria-roledescription="historias" aria-label="Historias de Gala">
+    <div class="bars" id="bars" aria-hidden="true"></div>
+    <div class="who" aria-hidden="true"><i>G</i>galaferrer <small id="whenLabel"></small></div>
+    <div class="ctrl">
+      <button type="button" id="pause" aria-label="Pausar historias"><svg viewBox="0 0 24 24" id="pauseIcon"><path d="M9 5v14M15 5v14"/></svg></button>
+    </div>
+    <button type="button" class="tap prev" id="prev" aria-label="Historia anterior"></button>
+    <button type="button" class="tap next" id="next" aria-label="Historia siguiente"></button>
+
+    <article class="frame f1 on" id="s1" data-auto="7000" aria-label="1 de 6: Hola, soy Gala">
+      <h2>Hola, soy Gala. Fisio con mimo y con método</h2>
+      <div class="photo" role="img" aria-label="Retrato de Gala Ferrer"><small>Foto de Gala, pendiente</small><svg viewBox="0 0 400 360" aria-hidden="true"><path d="M200 40c-46 0-74 36-74 84 0 38 18 64 40 78-58 14-110 58-126 158h320c-16-100-68-144-126-158 22-14 40-40 40-78 0-48-28-84-74-84z" fill="#fffafb" opacity=".6"/></svg></div>
+      <div class="sticker slot"><div><small>Próximo hueco libre: <span id="nextSlot">mañana, 9:00</span></small><div class="count" id="count" aria-hidden="true"><span>00<small>h</small></span><span>00<small>min</small></span><span>00<small>s</small></span></div></div><button type="button" class="btn" data-go="5">Reservar</button></div>
+    </article>
+
+    <article class="frame f2" id="s2" aria-label="2 de 6: Tu zona">
+      <h2>¿Qué zona te molesta?</h2>
+      <p style="margin-top:.4rem;font-size:.92rem">Toca un punto del cuerpo.</p>
+      <div class="bodywrap">
+        <div class="bodymap">
+          <svg viewBox="0 0 200 440" aria-hidden="true"><g fill="rgba(255,250,251,.55)" stroke="#2a2231" stroke-width="1.6" stroke-linejoin="round"><ellipse cx="100" cy="40" rx="24" ry="30"/><path d="M90 68h20v20H90z"/><path d="M60 92Q100 82 140 92L146 122Q138 162 132 205H68Q62 162 54 122Z"/><path d="M58 96Q40 100 36 140L26 228Q24 240 32 240Q39 240 40 228L54 152Z"/><path d="M142 96Q160 100 164 140L174 228Q176 240 168 240Q161 240 160 228L146 152Z"/><path d="M68 205H98L94 300L90 410Q90 422 80 422Q71 422 73 410L70 300Z"/><path d="M102 205H132L130 300L127 410Q129 422 120 422Q110 422 110 410L106 300Z"/></g></svg>
+          <button type="button" class="spot" style="left:50%;top:14%" data-zone="atm" aria-pressed="false" aria-label="Mandíbula"></button>
+          <button type="button" class="spot" style="left:50%;top:19%" data-zone="cuello" aria-pressed="false" aria-label="Cuello"></button>
+          <button type="button" class="spot" style="left:30%;top:22.5%" data-zone="hombro" aria-pressed="false" aria-label="Hombro"></button>
+          <button type="button" class="spot" style="left:50%;top:32%" data-zone="espalda" aria-pressed="false" aria-label="Espalda"></button>
+          <button type="button" class="spot" style="left:50%;top:44%" data-zone="pelvis" aria-pressed="false" aria-label="Zona pélvica"></button>
+          <button type="button" class="spot" style="left:42%;top:68%" data-zone="rodilla" aria-pressed="false" aria-label="Rodilla"></button>
+          <button type="button" class="spot" style="left:60%;top:92%" data-zone="tobillo" aria-pressed="false" aria-label="Tobillo"></button>
+        </div>
+        <div class="sticker answer" id="answer" aria-live="polite"><b>Elige una zona</b>Te diré qué tratamiento te recomiendo y lo que cuesta.</div>
+      </div>
+    </article>
+
+    <article class="frame f3" id="s3" data-auto="9000" aria-label="3 de 6: Tratamientos">
+      <h2>Tratamientos</h2>
+      <p style="margin-top:.4rem;font-size:.92rem">50 minutos. 65 € en el estudio, 90 € a domicilio.</p>
+      <ul class="list" id="treatList"></ul>
+    </article>
+
+    <article class="frame f4" id="s4" aria-label="4 de 6: Domicilio">
+      <h2>¿Voy a tu casa?</h2>
+      <p style="margin-top:.4rem">Llevo camilla, aceites y toallas. Barcelona y área metropolitana, también hoteles.</p>
+      <form class="sticker cp" id="checker">
+        <label for="cpInput">Tu código postal</label>
+        <div class="row"><input id="cpInput" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="08001"><button class="btn" type="submit">Ver</button></div>
+        <p class="result" id="cpResult" aria-live="polite">Te digo si llego y el precio.</p>
+      </form>
+    </article>
+
+    <article class="frame f5" id="s5" data-auto="8000" aria-label="5 de 6: El estudio">
+      <h2>El estudio, en el Eixample</h2>
+      <dl class="facts">
+        <div><dt>Dirección</dt><dd>Carrer de València, 284, 1º 2ª</dd></div>
+        <div><dt>Metro</dt><dd>Passeig de Gràcia (L2, L3, L4)</dd></div>
+        <div><dt>Horario</dt><dd>L a V de 9 a 20 h, sábados de 10 a 14 h</dd></div>
+      </dl>
+      <p style="margin-top:1rem"><a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+Valencia+284+Barcelona" target="_blank" rel="noopener">Abrir en Maps</a></p>
+    </article>
+
+    <article class="frame f6" id="s6" aria-label="6 de 6: Reservar">
+      <h2>Reserva en 30 segundos</h2>
+      <div class="poll" data-k="service"><p>Tratamiento</p><div class="opts" id="pService"></div></div>
+      <div class="poll" data-k="place"><p>Lugar</p><div class="opts"><button type="button" class="opt" aria-pressed="false" data-v="en el estudio">Estudio</button><button type="button" class="opt" aria-pressed="false" data-v="a domicilio">Mi casa</button></div></div>
+      <div class="poll" data-k="day"><p>Día</p><div class="opts" id="pDay"></div></div>
+      <div class="poll" data-k="time"><p>Franja</p><div class="opts"><button type="button" class="opt" aria-pressed="false" data-v="por la mañana">Mañana</button><button type="button" class="opt" aria-pressed="false" data-v="por la tarde">Tarde</button></div></div>
+      <p class="hint" id="pollHint" style="font-size:.85rem">Tu mensaje está abajo. Al enviarlo aceptas la <a href="../legal.html#privacidad">privacidad</a>.</p>
+    </article>
+
+    <form class="reply" id="reply">
+      <label class="sr" for="replyInput">Mensaje para Gala</label>
+      <textarea id="replyInput" rows="2" placeholder="Envía un mensaje a Gala"></textarea>
+      <button type="button" class="like" id="like" aria-pressed="false" aria-label="Me gusta"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20z"/></svg></button>
+      <button type="submit" aria-label="Enviar por WhatsApp"><svg viewBox="0 0 24 24"><path d="M3 11 21 3l-7 18-3-7z"/></svg></button>
+    </form>
+  </section>
+
+  <div class="aside">
+    <h2><span>Fisioterapia en el estudio o en tu casa</span></h2>
+    <p class="lead">Sesiones de 50 minutos, pocas al día. Suelo pélvico, deportiva, espalda, drenaje y mandíbula. Recorre las historias o reserva directamente.</p>
+    <div class="cta">
+      <a class="btn" href="#s6" data-go="5">Reservar por WhatsApp</a>
+      <a class="btn btn-soft" href="#s2" data-go="1">¿Qué zona te molesta?</a>
+    </div>
+    <dl>
+      <dt>Estudio</dt><dd>Carrer de València, 284, Barcelona</dd>
+      <dt>Domicilio</dt><dd>Barcelona 90 €, área metropolitana 100 €</dd>
+      <dt>Sesión</dt><dd>65 € en el estudio, bono de 5 por 300 €</dd>
+      <dt>Contacto</dt><dd><a href="tel:+34600000000">600 00 00 00</a>, <a href="mailto:hola@galaferrer.es">hola@galaferrer.es</a></dd>
+    </dl>
+    <p class="hint">Toca los lados o usa las flechas para avanzar. Mantén pulsado para pausar y toca dos veces para dar me gusta.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>Gala Ferrer, fisioterapeuta colegiada. Propuesta de diseño: nombre, precios, dirección, horarios y nº de colegiada son datos de ejemplo.</p>
+    <nav aria-label="Legal">
+      <a href="../legal.html#aviso">Aviso legal</a>
+      <a href="../legal.html#privacidad">Privacidad</a>
+      <a href="../legal.html#cookies">Cookies</a>
+      <a href="../index.html">Volver a las propuestas</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const frames = $$('.frame'), N = frames.length;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cur = 0, paused = reduced, raf = 0, start = 0, elapsed = 0, typed = false;
+  const sel = { service:null, place:null, day:null, time:null };
+  $('#bars').innerHTML = frames.map(() => '<span><i></i></span>').join('');
+  const bars = $$('#bars span');
+  const labels = ['ahora','tu zona','tratamientos','domicilio','estudio','reservar'];
+
+  const viewer = $('#historias');
+  const setHW = () => viewer.style.setProperty('--hw', (viewer.clientWidth / 2) + 'px');
+  setHW(); addEventListener('resize', setHW);
+  function show(i, push = true){
+    const prev = cur, nx = Math.max(0, Math.min(N - 1, i));
+    const dir = nx > prev ? 'n' : 'p';
+    cur = nx;
+    frames.forEach(f => f.classList.remove('in-n','in-p','out-n','out-p','out'));
+    if (!reduced && nx !== prev && frames[prev]) {
+      const o = frames[prev], inc = frames[nx];
+      o.classList.add('out', 'out-' + dir); inc.classList.add('in-' + dir);
+      setTimeout(() => { o.classList.remove('out', 'out-' + dir); inc.classList.remove('in-' + dir); }, 620);
+    }
+    frames.forEach((f, k) => { f.classList.toggle('on', k === cur); f.inert = k !== cur; });
+    bars.forEach((b, k) => { b.classList.toggle('seen', k < cur); b.querySelector('i').style.width = k < cur ? '100%' : '0'; });
+    $$('.hl').forEach(h => h.setAttribute('aria-current', +h.dataset.go === cur));
+    $('#whenLabel').textContent = labels[cur];
+    if (push && location.hash !== '#' + frames[cur].id) history.pushState({ s: cur }, '', '#' + frames[cur].id);
+    elapsed = 0; start = performance.now();
+    setMsg();
+  }
+  // Avance con tiempo real; se pausa al interactuar
+  function tick(t){
+    const f = frames[cur], dur = +f.dataset.auto || 0;
+    if (dur && !paused) {
+      elapsed += t - start;
+      const p = Math.min(1, elapsed / dur);
+      bars[cur].querySelector('i').style.width = (p * 100) + '%';
+      if (p >= 1) show(cur + 1);
+    }
+    start = t; raf = requestAnimationFrame(tick);
+  }
+  function setPaused(v){
+    paused = v;
+    $('#pause').setAttribute('aria-label', v ? 'Reanudar historias' : 'Pausar historias');
+    $('#pauseIcon').innerHTML = v ? '<path d="M8 5l11 7-11 7z"/>' : '<path d="M9 5v14M15 5v14"/>';
+  }
+  setPaused(paused);
+  $('#pause').addEventListener('click', () => setPaused(!paused));
+  // Toque, mantener para pausar y deslizar, como en la app
+  let hold = null, held = false, px = 0, py = 0, wasPaused = false, lastTap = 0;
+  viewer.addEventListener('pointerdown', e => {
+    px = e.clientX; py = e.clientY; held = false;
+    if (!e.target.closest('.tap')) return;
+    wasPaused = paused;
+    hold = setTimeout(() => { held = true; setPaused(true); }, 260);
+  });
+  const endHold = () => { clearTimeout(hold); if (held && !wasPaused) setPaused(false); };
+  viewer.addEventListener('pointerup', e => {
+    endHold();
+    const dx = e.clientX - px, dy = e.clientY - py;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5 && !e.target.closest('input,textarea')) { held = true; show(cur + (dx < 0 ? 1 : -1)); return; }
+    const now = performance.now();
+    if (now - lastTap < 320 && !e.target.closest('button,input,textarea,a,label')) { heart(e.clientX, e.clientY); lastTap = 0; held = true; }
+    else lastTap = now;
+  });
+  viewer.addEventListener('pointercancel', endHold);
+  $('#prev').addEventListener('click', () => { if (!held) show(cur - 1); });
+  $('#next').addEventListener('click', () => { if (!held) show(cur + 1); });
+  function heart(x, y){
+    const r = viewer.getBoundingClientRect(), b = document.createElement('div');
+    b.className = 'burst'; b.style.left = (x - r.left) + 'px'; b.style.top = (y - r.top) + 'px';
+    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20z"/></svg>';
+    if (!reduced) { viewer.append(b); setTimeout(() => b.remove(), 950); }
+    $('#like').setAttribute('aria-pressed', 'true');
+  }
+  $('#like').addEventListener('click', e => { const on = $('#like').getAttribute('aria-pressed') !== 'true'; $('#like').setAttribute('aria-pressed', on); if (on) { const r = e.currentTarget.getBoundingClientRect(); heart(r.left + r.width / 2, r.top - 30); } });
+  document.addEventListener('keydown', e => {
+    if (e.target.matches('input,textarea')) return;
+    if (e.key === 'ArrowRight') show(cur + 1);
+    if (e.key === 'ArrowLeft') show(cur - 1);
+  });
+  // Cualquier interacción dentro de la historia la detiene: el ritmo lo marca la visitante
+  const UI = 'button:not(.tap):not(#pause):not(#like),input,textarea,a,label,select';
+  $('#historias').addEventListener('pointerdown', e => { if (e.target.closest(UI)) setPaused(true); });
+  $('#historias').addEventListener('focusin', e => { if (e.target.closest(UI)) setPaused(true); });
+  $$('[data-go]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); show(+b.dataset.go); if (b.closest('.highlights,.aside,.profile')) $('#historias').scrollIntoView({ block: 'nearest', behavior: reduced ? 'auto' : 'smooth' }); }));
+  addEventListener('popstate', () => { const i = frames.findIndex(f => '#' + f.id === location.hash); show(i < 0 ? 0 : i, false); });
+  const initial = frames.findIndex(f => '#' + f.id === location.hash);
+  show(initial < 0 ? 0 : initial, false);
+  raf = requestAnimationFrame(t => { start = t; tick(t); });
+
+  // Datos
+  const SERVICES = [['Valoración inicial','primera visita'],['Suelo pélvico y posparto','embarazo, parto'],['Deportiva y lesiones','esguinces, tendones'],['Espalda y cervicales','contracturas'],['Drenaje y postoperatorio','linfático, cirugía'],['Mandíbula y ATM','bruxismo']];
+  const ZONES = {
+    atm:['Mandíbula','Bruxismo o tensión al masticar. Trabajo cara y cuello, junto a tu dentista.','Mandíbula y ATM'],
+    cuello:['Cuello','Cuello cargado y dolor de cabeza por pantallas. Terapia manual y ejercicios para la oficina.','Espalda y cervicales'],
+    hombro:['Hombro','Dolor al levantar el brazo. Valoro el origen, lo trato y te doy ejercicios.','Deportiva y lesiones'],
+    espalda:['Espalda','Lumbares o contractura recurrente. Terapia manual y miofascial.','Espalda y cervicales'],
+    pelvis:['Zona pélvica','Pérdidas de orina o sensación de peso. Valoración con total discreción.','Suelo pélvico y posparto'],
+    rodilla:['Rodilla','Dolor al bajar escaleras o correr. Lo valoro y planificamos la vuelta al deporte.','Deportiva y lesiones'],
+    tobillo:['Tobillo','Esguince o inestabilidad. Tratamiento y trabajo de estabilidad.','Deportiva y lesiones']
+  };
+  $$('.spot').forEach(b => b.addEventListener('click', () => {
+    const z = ZONES[b.dataset.zone];
+    $$('.spot').forEach(x => x.setAttribute('aria-pressed', x === b));
+    sel.zone = z[0].toLowerCase(); sel.pain = null;
+    $('#answer').innerHTML = `<b>${z[0]}</b>${z[1]}<span class="rec">${z[2]}, 50 min, desde 65 €</span>
+      <div class="pain"><label for="painR">¿Cuánto te molesta? <output id="painO">🙂</output></label>
+      <input type="range" id="painR" min="0" max="10" step="1" value="3" aria-valuetext="3 de 10">
+      <div class="scale" aria-hidden="true"><span>Poco</span><span>Mucho</span></div><p id="painP"></p></div>
+      <button type="button" class="btn" data-pick="${z[2]}">Reservar esto</button>`;
+    const r = $('#painR');
+    r.addEventListener('input', () => {
+      const v = +r.value; sel.pain = v;
+      $('#painO').textContent = v < 3 ? '🙂' : v < 6 ? '😕' : v < 8 ? '😣' : '😖';
+      r.setAttribute('aria-valuetext', v + ' de 10');
+      $('#painP').textContent = v >= 7 ? 'Empezamos por una valoración y lo tratamos en la misma sesión.' : v >= 4 ? 'Mejor tratarlo antes de que se cronifique.' : 'Buen momento para prevenir.';
+      setMsg();
+    });
+  }));
+  $('#answer').addEventListener('click', e => { const b = e.target.closest('[data-pick]'); if (b) { choose('service', b.dataset.pick); show(5); } });
+
+  $('#treatList').innerHTML = SERVICES.map(([n,d]) => `<li><div><span>${n}</span><br><small>${d}</small></div><button type="button" data-pick="${n}" aria-label="Reservar ${n}">Reservar</button></li>`).join('');
+  $('#treatList').addEventListener('click', e => { const b = e.target.closest('[data-pick]'); if (b) { choose('service', b.dataset.pick); show(5); } });
+
+  const METRO = ['0890','0891','0892','0893','0894','0895','0896','0897','0817','0819','0820','0811','0812'];
+  $('#checker').addEventListener('submit', e => {
+    e.preventDefault();
+    const cp = $('#cpInput').value.trim(), r = $('#cpResult');
+    if (!/^\d{5}$/.test(cp)) { r.innerHTML = '<b>Revisa el código</b>Escribe las 5 cifras.'; return; }
+    const n = +cp;
+    if (n >= 8001 && n <= 8042) r.innerHTML = '<b>Sí, voy a tu casa</b>Barcelona ciudad: 90 € la sesión.';
+    else if (METRO.some(p => cp.startsWith(p))) r.innerHTML = '<b>Sí, también llego</b>Área metropolitana: 100 € la sesión.';
+    else r.innerHTML = '<b>Esa zona aún no la cubro</b>Te espero en el estudio del Eixample.';
+  });
+
+  const dn = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const days = []; const d0 = new Date(); d0.setHours(0,0,0,0);
+  for (let i = 1; days.length < 5; i++) { const d = new Date(d0); d.setDate(d0.getDate()+i); if (d.getDay()) days.push(d); }
+  $('#nextSlot').textContent = `${(days[0] - d0) === 864e5 ? 'mañana' : dn[days[0].getDay()] + ' ' + days[0].getDate()}, 9:00`;
+  const target = new Date(days[0]); target.setHours(9, 0, 0, 0);
+  const pad = n => String(n).padStart(2, '0');
+  function countdown(){
+    let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+    const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60); s %= 60;
+    const c = $$('#count span');
+    c[0].firstChild.textContent = pad(h); c[1].firstChild.textContent = pad(m); c[2].firstChild.textContent = pad(s);
+  }
+  countdown(); setInterval(countdown, 1000);
+  $('#pService').innerHTML = SERVICES.map(([n]) => `<button type="button" class="opt" aria-pressed="false" data-v="${n}">${n}</button>`).join('');
+  $('#pDay').innerHTML = days.map(d => `<button type="button" class="opt" aria-pressed="false" data-v="el ${dn[d.getDay()]} ${d.getDate()}">${dn[d.getDay()].slice(0,3)} ${d.getDate()}</button>`).join('');
+  function choose(k, v){
+    sel[k] = v;
+    $$(`.poll[data-k="${k}"] .opt`).forEach(o => o.setAttribute('aria-pressed', o.dataset.v === v));
+    setMsg();
+  }
+  $$('.poll').forEach(p => p.addEventListener('click', e => { const o = e.target.closest('.opt'); if (o) choose(p.dataset.k, o.dataset.v); }));
+
+  $('#replyInput').addEventListener('input', () => { typed = true; fitReply(); });
+  function fitReply(){ const t = $('#replyInput'); t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight + 3, 120) + 'px'; $('#historias').style.setProperty('--rh', t.offsetHeight + 'px'); }
+  function setMsg(){
+    if (typed) return fitReply();
+    const inp = $('#replyInput');
+    if (cur !== 5 && !sel.service && sel.pain == null) { inp.value = ''; return fitReply(); }
+    let t = `Hola, Gala. Me gustaría reservar ${sel.service ? 'una sesión de ' + sel.service.toLowerCase() : 'una sesión'}`;
+    if (sel.place) t += ` ${sel.place}`;
+    if (sel.day) t += `, ${sel.day}`;
+    if (sel.time) t += ` ${sel.time}`;
+    t += '.';
+    const ART = {'cuello':'el cuello','hombro':'el hombro','tobillo':'el tobillo'};
+    if (sel.zone && sel.pain != null) t += ` Me molesta ${ART[sel.zone] || 'la ' + sel.zone} (${sel.pain}/10).`;
+    inp.value = t + ' ¿Tienes disponibilidad?';
+    fitReply();
+  }
+  $('#reply').addEventListener('submit', e => {
+    e.preventDefault();
+    const t = $('#replyInput').value.trim();
+    if (!t) { $('#replyInput').placeholder = 'Escribe tu mensaje primero'; $('#replyInput').focus(); return; }
+    window.open('https://wa.me/34600000000?text=' + encodeURIComponent(t), '_blank', 'noopener');
+  });
+})();
+</script>
+</body>
+</html>
